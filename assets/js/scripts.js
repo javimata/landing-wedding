@@ -190,6 +190,12 @@
 			});
 		};
 
+
+		if ( $('#servicios #particles-servicios').length > 0 ) {
+			particlesJS.load('particles-servicios', 'assets/particlesjs-config.json', function () { });
+		};
+
+
 		if ( jam_particlesFooter == 1 ) {
 			particlesJS.load('particles-footer', 'assets/particlesfooter-config.json', function () { });
 		};

@@ -5,7 +5,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Roboto', serif;
+  font-family: 'Lato', serif;
 }
 html {
   overflow-x: hidden;
@@ -87,12 +87,12 @@ body {
   text-align: center;
   padding: 10px 0;
   font-size: 16px;
-  font-family: 'Roboto', serif;
+  font-family: 'Lato', serif;
   font-weight: 400;
 }
 #header nav.navbar ul.navbar-nav li a {
   font-size: 16px;
-  font-family: 'Roboto', serif;
+  font-family: 'Lato', serif;
   font-weight: 400;
   letter-spacing: 1px;
   padding: 0 1rem;
@@ -100,7 +100,7 @@ body {
   transition: all 300ms;
 }
 #header nav.navbar ul.navbar-nav li:hover a {
-  color: #df9f15;
+  color: #aea1ea;
 }
 #header a.navbar-brand img {
   height: auto;
@@ -125,6 +125,23 @@ body {
   #header.sticky a.navbar-brand img {
     height: auto;
   }
+}
+section#slider {
+  text-shadow: 3px 3px 5px #000;
+}
+section#servicios {
+  position: relative;
+}
+section#servicios .container {
+  z-index: 1;
+  position: relative;
+}
+section#servicios div#particles-servicios {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 0;
 }
 section#beneficios {
   background: url('../../images/fondo-beneficios.jpg') no-repeat;
@@ -165,10 +182,10 @@ header#header-section .title-section {
 }
 .card.card-paquetes {
   border: 0;
-  background: rgba(255, 255, 255, 0.85);
+  background: #ffffff;
 }
 .card.card-paquetes .card-header {
-  background: #2d1238;
+  background: #8c54a1;
   color: #fff;
   font-size: 20px;
   padding: .75rem 0;
@@ -217,7 +234,7 @@ header#header-section .title-section {
   padding-bottom: 10px;
 }
 footer#footer {
-  background: #2d1238;
+  background: #8c54a1;
   color: #fff;
   font-size: 13px;
   position: relative;
@@ -234,7 +251,7 @@ footer#footer a:hover {
   color: #fff;
 }
 footer#footer a.btn-link {
-  color: #2d1238;
+  color: #8c54a1;
   text-decoration: underline;
 }
 footer#footer a.btn-link:hover {
@@ -321,7 +338,7 @@ footer#footer div#particles-footer {
   width: 100%;
   height: 100%;
   position: fixed;
-  background: #2d1238;
+  background: #8c54a1;
   z-index: 9999;
   display: -webkit-box;
   display: flex;
@@ -371,7 +388,7 @@ canvas {
   background: #000;
 }
 a {
-  color: #2d1238;
+  color: #8c54a1;
 }
 a:focus,
 a:active {
@@ -409,10 +426,10 @@ h6 {
   font-size: 20px;
 }
 .btn.btn-default:hover {
-  background: #2d1238;
+  background: #8c54a1;
 }
 .btn.btn-primary {
-  background: #2d1238;
+  background: #8c54a1;
   color: #fff;
   border: 0;
   padding: 12px 30px;
@@ -421,7 +438,7 @@ h6 {
   transition: all 300ms;
 }
 .btn.btn-primary:hover {
-  background: #191919;
+  background: #aea1ea;
   color: #fff;
 }
 .btn.btn-secondary {
@@ -440,7 +457,7 @@ h6 {
   position: relative;
 }
 .form-control.resalta {
-  box-shadow: 0 0 10px #2d1238;
+  box-shadow: 0 0 10px #8c54a1;
   -webkit-animation: pulse .5s;
           animation: pulse .5s;
 }

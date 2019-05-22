@@ -1,13 +1,13 @@
 /*---------- PRESETS ----------*/
-@primary:     #2d1238;
-@secondary:   #191919;
+@primary:     #8c54a1;
+@secondary:   #aea1ea;
 @black:       #000;
 @white:       #fff;
 @gray:        #f3f2f2;
 @dark:		  #464646;
 @orange:      #df9f15;
 
-@font1:       'Roboto', serif;
+@font1:       'Lato', serif;
 @font2:		  'Open Sans', sans-serif;
 
 h1, h2, h3, h4, h5, h6 {
@@ -100,7 +100,7 @@ body {
 				}
 				&:hover {
 					a {
-						color: @orange;
+						color: @secondary;
 					}
 				}
 			}
@@ -130,6 +130,25 @@ body {
 			}
 		}
 	}
+}
+
+section#slider {
+	text-shadow: 3px 3px 5px @black;
+}
+
+section#servicios {
+	position: relative;
+	.container {
+		z-index: 1;
+		position: relative;
+	}
+	div#particles-servicios {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		z-index: 0;
+	}	
 }
 
 section#beneficios {
@@ -178,7 +197,7 @@ header#header-section {
 }
 .card.card-paquetes {
 	border: 0;
-	background: rgba(255,255,255,.85);
+	background: rgba(255,255,255,1);
 	.card-header {
 		background: @primary;
 		color: @white;

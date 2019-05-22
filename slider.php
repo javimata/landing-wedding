@@ -14,7 +14,7 @@
 					<h1 class="tp-caption tp-resizeme" 
 						id="slide-1-layer-1" 
 						data-x="5" 
-						data-y="185" 
+						data-y="115" 
 						data-width="['auto']"
 						data-height="['auto']"
 						data-type="text" 
@@ -25,13 +25,13 @@
 						data-paddingright="[0,0,0,0]"
 						data-paddingbottom="[0,0,0,0]"
 						data-paddingleft="[0,0,0,0]"
-						style="z-index: 5; white-space: nowrap; font-size: 90px; line-height: 90px; font-weight: 400; color: #ffffff; letter-spacing: 0px;" >WEB HOSTING</h1>
+						style="z-index: 5; white-space: nowrap; font-size: 60px; line-height: 60px; font-weight: 700; color: #ffffff; letter-spacing: 0px;" >MARKETING DIGITAL</h1>
 
 					<!-- LAYER NR. 2 -->
 					<h3 class="tp-caption tp-resizeme" 
 						id="slide-1-layer-2" 
 						data-x="5" 
-						data-y="262" 
+						data-y="180" 
 						data-width="['auto']"
 						data-height="['auto']"
 						data-type="text" 
@@ -48,7 +48,7 @@
 					<div class="tp-caption" 
 						id="slide-1-layer-3" 
 						data-x="5" 
-						data-y="349" 
+						data-y="250" 
 						data-width="['auto']"
 						data-height="['auto']"
 						data-type="text" 
@@ -61,11 +61,11 @@
 						data-paddingleft="[0,0,0,0]"
 						style="z-index: 7; white-space: nowrap; font-size: 30px; line-height: 40px; font-weight: 400; color: #ffffff; letter-spacing: 0px;">
 						<ul class="list-check list-unstyled">
-							<li><img src="images/list-check.png" class="img-fluid"> cPanel</li>
-							<li><img src="images/list-check.png" class="img-fluid"> Certificado SSL</li>
-							<li><img src="images/list-check.png" class="img-fluid"> Ancho de banda ilimitado</li>
-							<li><img src="images/list-check.png" class="img-fluid"> Cuentas de correo ilimitadas</li>
-							<li><img src="images/list-check.png" class="img-fluid"> Almacenamiento SSD</li>
+							<li><img src="images/list-check.png" class="img-fluid"> Lorem, ipsum.</li>
+							<li><img src="images/list-check.png" class="img-fluid"> Lorem ipsum dolor sit.</li>
+							<li><img src="images/list-check.png" class="img-fluid"> Lorem ipsum dolor sit amet.</li>
+							<li><img src="images/list-check.png" class="img-fluid"> Lorem, ipsum.</li>
+							<li><img src="images/list-check.png" class="img-fluid"> Lorem, ipsum dolor.</li>
 						</ul>
 					</div>
 				</li>

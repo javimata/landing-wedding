@@ -1,7 +1,7 @@
 {
     "info": {
-        "titulo": "Hosting - Tu mejor hospedaje web",
-        "descripcion": "Hosting barato",
+        "titulo": "Agencia - Agencia de Web Marketing",
+        "descripcion": "Agencia de Web Marketing",
         "googleAnalytics": "",
         "fbPixel": "",
         "copyright": "© [Y]. Todos los Derechos Reservados Aviso de Privacidad. [company]",
@@ -30,8 +30,8 @@
         "id": "menu-main",
         "type": "list",
         "items": {
-            "Paquetes": {
-                "url": "#paquetes",
+            "Servicios": {
+                "url": "#servicios",
                 "class": "nav-item",
                 "target": "",
                 "itemClass": ""
@@ -245,18 +245,18 @@
     "configuracion": {
         "openGraph": 1,
         "gotop": 1,
-        "popup": 1,
+        "popup": 0,
         "revolution": 1,
         "loading": 0,
-        "particlesFooter": 1,
+        "particlesFooter": 0,
         "fonts": {
-            "Roboto": {
-                "fontfamily": "Roboto, serif",
-                "weight": "400"
+            "Lato": {
+                "fontfamily": "Lato, serif",
+                "weight": "400,700"
             },
             "Open Sans": {
                 "fontfamily": "'Open Sans', sans-serif",
-                "weight": "400,600,700"
+                "weight": "400"
             }
         },
         "assets": {

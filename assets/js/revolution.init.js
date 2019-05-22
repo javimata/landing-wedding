@@ -47,7 +47,7 @@ jQuery(function($) {
         },
         visibilityLevels: [1120, 1024, 778, 480],
         gridwidth: 1120,
-        gridheight: 750,
+        gridheight: 600,
         lazyType: "none",
         shadow: 0,
         spinner: "spinner4",

@@ -143,10 +143,10 @@ $config = getConfig();
 		</section>
 
 
-		<section id="paquetes" class="py-5">
+		<section id="servicios" class="py-5">
 
 			<header id="header-section" class="text-center mb-4" data-aos="fade-up" data-aos-delay="0">
-				<h2 class="title-section">Paquetes</h2>
+				<h2 class="title-section">Servicios</h2>
 			</header>
 
 			<div class="container">
@@ -235,6 +235,8 @@ $config = getConfig();
 					</div>
 				</div>
 			</div>
+
+			<div id="particles-servicios"></div>
 
 		</section>
 
