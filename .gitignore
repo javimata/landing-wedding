@@ -1,0 +1,11 @@
+ARCHIVOS
+.vscode
+node_modules
+vendor
+.DS_Store
+Thumbs.db
+composer.lock
+!.gitignore
+!.editorconfig
+!.phpcs.xml.dist
+dist
