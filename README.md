@@ -1,17 +1,13 @@
-# Landing Hosting (BASE)
+# Landing Base (BASE)
 ## Con Gulp
 
 ![Demo Landing Base Hosting](http://demos.javimata.com/landing-hosting/images/screen.png)
 
 ```  
-git clone https://github.com/javimata/landing-hosting.git  
+git clone https://github.com/javimata/landing-base.git  
 composer install 
 npm install
 gulp  
 ```
 
-<a href="http://demos.javimata.com/landing-hosting/" target="_blank">VER AQUÍ</a>
-
-
-## Con CDN's
-<a href="https://github.com/javimata/landing-hosting/tree/rem_deps">Ver aqui</a>
+<a href="http://demos.javimata.com/landing-base/" target="_blank">VER AQUÍ</a>
