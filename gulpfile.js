@@ -2,7 +2,7 @@ const gulp         = require('gulp');
 const path         = require('path');
 const less         = require('gulp-less');
 const autoprefixer = require('gulp-autoprefixer');
-const minify       = require('gulp-minify-css');
+const clean        = require('gulp-clean-css');
 const uglify       = require('gulp-uglify');
 const concat       = require('gulp-concat');
 const nodepath     = 'node_modules/';
@@ -52,7 +52,7 @@ gulp.task('styles', function (done) {
         .pipe(autoprefixer({
             browsers: ['last 3 versions']
         }))
-        .pipe(minify())
+        .pipe(clean())
         .pipe(gulp.dest('./dist/css'));
     done();
 });
@@ -76,7 +76,7 @@ gulp.task('scripts', function (done) {
 gulp.task('compile-css', function (done) {
     gulp.src(assetsAPPCSS)
         .pipe(concat('app.css'))
-        .pipe(minify())
+        .pipe(clean())
         .pipe(gulp.dest('./dist/css/'));
     done();
 });
@@ -122,7 +122,7 @@ gulp.task('compile-js', function (done) {
         .pipe(concat('revolution.js'))
         .pipe(uglify())
         .pipe(gulp.dest('./dist/js/'));
-        
+
         gulp.src([
             './revolution/fonts/revicons/**'])
             .pipe(gulp.dest('dist/fonts/revicons/'));

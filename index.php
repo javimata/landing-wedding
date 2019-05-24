@@ -77,14 +77,14 @@ $config = getConfig();
 
 		<?php if ( $config->configuracion->loading == 1 ): ?>
 		<div class="loading" id="particles-js">
-			<div class="loading-logo"><img src="images/logo.png" alt="Loading" class="mb-1" /><br /><p>Cargando...</p></div>
+			<div class="loading-logo"><img src="images/logo.png" alt="Loading" class="mb-1" width="151" height="70" class="img-fluid" /><br /><p>Cargando...</p></div>
 		</div>
 		<?php endif; ?>
 
 		<?php if ( $config->contactos->whatsapp != "" ): ?>
 		<div class="floating">
 			<a href="https://wa.me/<?php echo cleanString($config->contactos->whatsapp); ?>" target="_blank" class="btn-floating">
-				<img src="images/ico-float-whatsapp.png" class="img-fluid" />
+				<img src="images/ico-float-whatsapp.png" class="img-fluid" width="72" height="72" />
 			</a>
 		</div>
 		<?php endif; ?>
@@ -92,7 +92,7 @@ $config = getConfig();
 		<?php if ( $config->contactos->messenger != "" ): ?>
 		<div class="floating-messenger">
 			<a href="http://m.me/<?php echo $config->contactos->messenger; ?>" target="_blank" class="btn-floating">
-				<img src="images/ico-float-messenger.png" class="img-fluid" />
+				<img src="images/ico-float-messenger.png" class="img-fluid" width="72" height="72" />
 			</a>
 		</div>
 		<?php endif; ?>
@@ -104,7 +104,7 @@ $config = getConfig();
 
 					<div class="col-4">
 						<a class="navbar-brand p-1" href="#" data-aos="fade-left" data-aos-delay="0">
-							<img src="<?php echo $config->info->logo; ?>" alt="<?php echo $config->info->titulo; ?>" class="img-fluid"/>
+							<img src="<?php echo $config->info->logo; ?>" alt="<?php echo $config->info->titulo; ?>" class="img-fluid" width="151" height="70" />
 						</a>
 					</div>
 					<div class="col-8">
@@ -246,7 +246,7 @@ $config = getConfig();
 			<div class="container py-lg-5">
 				<div class="row align-items-center">
 					<div class="col-md-5 pb-3 pb-md-0">
-						<img src="images/beneficios.jpg" alt="Beneficios" class="img-fluid" data-aos="fade-left" data-aos-delay="300">
+						<img src="images/beneficios.jpg" alt="Beneficios" class="img-fluid" data-aos="fade-left" data-aos-delay="300" width="640" height="418">
 					</div>
 					<div class="col-md-7">
 						<div class="box-content text-white" data-aos="fade-right" data-aos-delay="600">
@@ -268,10 +268,11 @@ $config = getConfig();
 				<h2 class="mb-4 text-center">Algunos clientes</h2>
 
 				<div class="slide-logos d-flex justify-content-around align-items-center">
-					<?php 
-					$files = glob('images/logos/*.{jpg,png,gif}', GLOB_BRACE);
-					foreach($files as $file): ?>
-					<div><img src="<?php echo $file; ?>" class="img-fluid" alt="Logo" /></div>
+					<?php $files = glob('images/logos/*.{jpg,png,gif}', GLOB_BRACE);
+					foreach($files as $file):
+						list($ancho, $alto) = getimagesize($file);
+					?>
+					<div><img src="<?php echo $file; ?>" class="img-fluid" alt="Logo" width="<?php echo $ancho; ?>" height="<?php echo $alto; ?>" /></div>
 					<?php endforeach; ?>
 				</div>
 
@@ -318,7 +319,7 @@ $config = getConfig();
 				<div class="row">
 					<div class="col-lg-4">
 						<div class="logo-footer">
-							<img src="images/logo.png" alt="">
+							<img src="images/logo.png" alt="<?php echo $config->info->titulo; ?>" width="151" height="70" class="img-fluid">
 						</div>
 						<div class="redes-footer py-3">
 							<ul class="list-inline">
