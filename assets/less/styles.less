@@ -1,5 +1,5 @@
 /*---------- PRESETS ----------*/
-@primary:     #8c54a1;
+@primary:     #4f3676;
 @secondary:   #aea1ea;
 @black:       #000;
 @white:       #fff;
@@ -160,16 +160,16 @@ section#beneficios {
 
 header#header-section {
 	.title-section {
-		font-size: 90px;
+		font-size: 50px;
 	}
 	@media ( min-width: 768px ) and ( max-width: 991px ) {
 		.title-section {
-			font-size: 60px;
+			font-size: 40px;
 		}
 	}
 	@media ( max-width: 767px ) {
 		.title-section {
-			font-size: 45px;
+			font-size: 34px;
 		}
 	}
 }
@@ -256,10 +256,17 @@ header#header-section {
 	}
 }
 
+section#contacto {
+	background: url('../../images/fondo-beneficios.jpg') no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-color: @black;
+} 
+
 footer#footer {
 	background: @primary;
 	color: @white;
-	font-size: 13px;
+	font-size: 18px;
 	position: relative;
 	overflow: hidden;
 	.container {
@@ -280,7 +287,7 @@ footer#footer {
 		}
 	}
 	.title-section {
-		font-size: 60px;
+		font-size: 40px;
 		text-shadow: 0 0 10px rgba(0,0,0,0.5);
 	}
 	@media ( max-width: 767px ) {

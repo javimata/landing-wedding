@@ -180,40 +180,6 @@
                         "required": 1
                     }
                 },
-                "hosting": {
-                    "class": "form-group col-md-6 form-inline",
-                    "id": "",
-                    "name": "hosting",
-                    "mailchimpField": "",
-                    "attribs": {
-                        "type": "checkbox",
-                        "class": "form-check-input",
-                        "classContainer": "form-check-inline pl-3",
-                        "id": "hosting",
-                        "value": "Si|No",
-                        "classContainerValues": "form-check",
-                        "classLabel": "",
-                        "label": "¿Actualmente cuenta con un hosting web?",
-                        "required": 0
-                    }
-                },
-                "pagina": {
-                    "class": "form-group col-md-6 form-inline",
-                    "id": "",
-                    "name": "pagina",
-                    "mailchimpField": "",
-                    "attribs": {
-                        "type": "radio",
-                        "class": "form-check-input",
-                        "classContainer": "form-check-inline pl-3",
-                        "id": "pagina",
-                        "value": "Si|No",
-                        "classContainerValues": "form-check",
-                        "classLabel": "",
-                        "label": "¿Actualmente cuenta con una página web?",
-                        "required": 1
-                    }
-                },
                 "comentarios": {
                     "class": "form-group col-12",
                     "id": "",
@@ -233,7 +199,7 @@
                     "id": "",
                     "attribs": {
                         "type": "submit",
-                        "class": "btn btn-secondary px-md-5",
+                        "class": "btn btn-primary btn-full px-md-5",
                         "id": "",
                         "value": "Cotizar",
                         "attribs": {}

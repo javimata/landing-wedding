@@ -174,7 +174,7 @@ $config = getConfig();
 								</div>
 							</div>
 							<div class="card-footer">
-								<a href="#" class="btn-popup btn btn-primary btn-full" data-toggle="modal" data-subtitle="50mb" data-target="#popup_cotiza" data-title="Paquete Básico" data-product="">¡Contratar ahora!</a>
+								<a href="#contacto" class="btn-popup btn btn-primary btn-full">¡Contratar ahora!</a>
 							</div>
 						</div>
 					</div>
@@ -202,7 +202,7 @@ $config = getConfig();
 								</div>
 							</div>
 							<div class="card-footer">
-								<a href="#" class="btn-popup btn btn-primary btn-full" data-toggle="modal" data-subtitle="200mb" data-target="#popup_cotiza" data-title="Paquete Profesional" data-product="">¡Contratar ahora!</a>
+								<a href="#contacto" class="btn-popup btn btn-primary btn-full">¡Contratar ahora!</a>
 							</div>
 						</div>
 					</div>
@@ -229,14 +229,12 @@ $config = getConfig();
 								</div>
 							</div>
 							<div class="card-footer">
-								<a href="#" class="btn-popup btn btn-primary btn-full" data-toggle="modal" data-subtitle="500mb" data-target="#popup_cotiza" data-title="Paquete Plus" data-product="">¡Contratar ahora!</a>
+								<a href="#contacto" class="btn-popup btn btn-primary btn-full">¡Contratar ahora!</a>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-
-			<div id="particles-servicios"></div>
 
 		</section>
 
@@ -279,7 +277,7 @@ $config = getConfig();
 
 		</section>
 
-		<footer id="footer" class="py-5">
+		<section id="contacto" class="py-5 text-white">
 			
 			<div class="container pt-md-4">
 				<div class="row">
@@ -308,14 +306,36 @@ $config = getConfig();
 
 					</div>
 
-					<div class="col-12 col-copy text-center mt-5" data-aos="fade-up" data-aos-delay="300" data-aos-offset="0">
-						<?php echo replaceValues($config->info->copyright); ?> 
+				</div>
+			</div>
+		</section>
+
+		<footer id="footer" class="py-5">
+			
+			<div class="container pt-md-4">
+				<div class="row">
+					<div class="col-lg-4">
+						<div class="logo-footer">
+							<img src="images/logo.png" alt="">
+						</div>
+						<div class="redes-footer py-3">
+							<ul class="list-inline">
+								<?php foreach ($config->redes as $red): ?>
+								<li class="list-inline-item"><a href="<?php echo $red->url ?>" target="_blank"><i class="<?php echo $red->icon ?> fa-2x"></i></a></li>
+								<?php endforeach; ?>
+							</ul>
+						</div>
+					</div>
+					<div class="col-lg-4">
+						<ul class="navbar-nav w-100">
+							<?php echo createMenu($config->menu, 'li'); ?>
+						</ul>
+					</div>
+					<div class="col-lg-4">
+
 					</div>
 				</div>
 			</div>
-			<?php if ( $config->configuracion->particlesFooter == 1 ): ?>
-			<div id="particles-footer"></div>
-			<?php endif ?>
 		</footer>
 
 		<?php if ( $config->configuracion->popup == 1 ): ?>

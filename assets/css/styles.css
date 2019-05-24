@@ -149,16 +149,16 @@ section#beneficios {
   background-size: cover;
 }
 header#header-section .title-section {
-  font-size: 90px;
+  font-size: 50px;
 }
 @media (min-width: 768px) and (max-width: 991px) {
   header#header-section .title-section {
-    font-size: 60px;
+    font-size: 40px;
   }
 }
 @media (max-width: 767px) {
   header#header-section .title-section {
-    font-size: 45px;
+    font-size: 34px;
   }
 }
 .box-content h2 {
@@ -185,7 +185,7 @@ header#header-section .title-section {
   background: #ffffff;
 }
 .card.card-paquetes .card-header {
-  background: #8c54a1;
+  background: #4f3676;
   color: #fff;
   font-size: 20px;
   padding: .75rem 0;
@@ -233,10 +233,16 @@ header#header-section .title-section {
 .list-check li {
   padding-bottom: 10px;
 }
+section#contacto {
+  background: url('../../images/fondo-beneficios.jpg') no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: #000;
+}
 footer#footer {
-  background: #8c54a1;
+  background: #4f3676;
   color: #fff;
-  font-size: 13px;
+  font-size: 18px;
   position: relative;
   overflow: hidden;
 }
@@ -251,14 +257,14 @@ footer#footer a:hover {
   color: #fff;
 }
 footer#footer a.btn-link {
-  color: #8c54a1;
+  color: #4f3676;
   text-decoration: underline;
 }
 footer#footer a.btn-link:hover {
   color: #fff;
 }
 footer#footer .title-section {
-  font-size: 60px;
+  font-size: 40px;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 @media (max-width: 767px) {
@@ -338,7 +344,7 @@ footer#footer div#particles-footer {
   width: 100%;
   height: 100%;
   position: fixed;
-  background: #8c54a1;
+  background: #4f3676;
   z-index: 9999;
   display: -webkit-box;
   display: flex;
@@ -388,7 +394,7 @@ canvas {
   background: #000;
 }
 a {
-  color: #8c54a1;
+  color: #4f3676;
 }
 a:focus,
 a:active {
@@ -426,10 +432,10 @@ h6 {
   font-size: 20px;
 }
 .btn.btn-default:hover {
-  background: #8c54a1;
+  background: #4f3676;
 }
 .btn.btn-primary {
-  background: #8c54a1;
+  background: #4f3676;
   color: #fff;
   border: 0;
   padding: 12px 30px;
@@ -457,7 +463,7 @@ h6 {
   position: relative;
 }
 .form-control.resalta {
-  box-shadow: 0 0 10px #8c54a1;
+  box-shadow: 0 0 10px #4f3676;
   -webkit-animation: pulse .5s;
           animation: pulse .5s;
 }
