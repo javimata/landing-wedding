@@ -145,8 +145,8 @@ gulp.task('fonts', function () {
  * Watchs para archivos principales, no se checan dependencias
  */
 gulp.task('watch', function(){
-    gulp.watch('./assets/less/**', gulp.series('styles'));
-    gulp.watch('./assets/js/**', gulp.series('scripts'));
+    gulp.watch('./assets/less/*.less', gulp.series('styles'));
+    gulp.watch('./assets/js/*.js', gulp.series('scripts'));
 });
 
 /**
