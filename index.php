@@ -26,10 +26,10 @@ $config = getConfig();
 		<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
 		<link rel="icon" href="images/favicon.png" type="image/x-icon">
 
+		<?php if ( configFonts() != "" ): ?>
 		<!-- GOOGLE FONT -->
-		<?php /*
 		<link href="https://fonts.googleapis.com/css?family=<?php echo configFonts(); ?>" rel="stylesheet">
-		*/ ?>
+		<?php endif; ?>
 
 		<!-- Bootstrap CSS -->
 		<link rel="stylesheet" href="dist/css/app.css">

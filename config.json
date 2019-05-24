@@ -215,16 +215,7 @@
         "revolution": 1,
         "loading": 0,
         "particlesFooter": 0,
-        "fonts": {
-            "Lato": {
-                "fontfamily": "Lato, serif",
-                "weight": "400,700"
-            },
-            "Open Sans": {
-                "fontfamily": "'Open Sans', sans-serif",
-                "weight": "400"
-            }
-        },
+        "fonts": {},
         "assets": {
             "slick": 1,
             "matchHeight": 1,
