@@ -27,7 +27,9 @@ $config = getConfig();
 		<link rel="icon" href="images/favicon.png" type="image/x-icon">
 
 		<!-- GOOGLE FONT -->
+		<?php /*
 		<link href="https://fonts.googleapis.com/css?family=<?php echo configFonts(); ?>" rel="stylesheet">
+		*/ ?>
 
 		<!-- Bootstrap CSS -->
 		<link rel="stylesheet" href="dist/css/app.css">
@@ -357,7 +359,7 @@ $config = getConfig();
 		</script>
 
 		<?php if ( $config->configuracion->gotop == 1 ): ?>
-		<a href="javascript:void(0)" class="scrollup" aria-label="">&nbsp;</a>
+		<a href="#" class="scrollup" aria-label="">&nbsp;</a>
 		<?php endif; ?>
 
 		<?php if ( $config->configuracion->loading == 1 ): ?>

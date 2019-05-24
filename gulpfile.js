@@ -89,19 +89,21 @@ gulp.task('compile-js', function (done) {
         nodepath + 'jquery/dist/jquery.min.js', 
         nodepath + 'aos/dist/aos.js'
     ])
-    .pipe(concat('main.js'))
-    .pipe(uglify())
-    .pipe(gulp.dest('./dist/js/'));
+        .pipe(concat('main.js'))
+        .pipe(uglify())
+        .pipe(gulp.dest('./dist/js/'));
+
     gulp.src([
         nodepath + 'bootstrap/dist/js/bootstrap.bundle.min.js'
     ])
         .pipe(concat('bootstrap.bundle.js'))
         .pipe(uglify())
         .pipe(gulp.dest('./dist/js/'));
+
     gulp.src(assetsAPPJS)
-    .pipe(concat('app.js'))
-    .pipe(uglify())
-    .pipe(gulp.dest('./dist/js/'));
+        .pipe(concat('app.js'))
+        .pipe(uglify())
+        .pipe(gulp.dest('./dist/js/'));
 
     if (config.configuracion.revolution == 1) {
         gulp.src([
@@ -120,6 +122,7 @@ gulp.task('compile-js', function (done) {
         .pipe(concat('revolution.js'))
         .pipe(uglify())
         .pipe(gulp.dest('./dist/js/'));
+        
         gulp.src([
             './revolution/fonts/revicons/**'])
             .pipe(gulp.dest('dist/fonts/revicons/'));
