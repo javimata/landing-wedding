@@ -73,7 +73,7 @@ $config = getConfig();
 		<?php endif ?>
 
 	</head>
-	<body>
+	<body data-gotop="<?php echo $config->configuracion->gotop; ?>" data-popup="<?php echo $config->configuracion->popup; ?>" data-particles="<?php echo $config->configuracion->particlesFooter; ?>">
 
 		<?php if ( $config->configuracion->loading == 1 ): ?>
 		<div class="loading" id="particles-js">
@@ -352,12 +352,6 @@ $config = getConfig();
 		<?php if ( $config->configuracion->revolution == 1 ): ?>
 		<script defer src="dist/js/revolution.js"></script>
 		<?php endif ?>
-
-		<script defer type="text/javascript">
-			var jam_gotop = '<?php echo $config->configuracion->gotop; ?>';
-			var jam_popup = '<?php echo $config->configuracion->popup; ?>';
-			var jam_particlesFooter = '<?php echo $config->configuracion->particlesFooter; ?>';
-		</script>
 
 		<?php if ( $config->configuracion->gotop == 1 ): ?>
 		<a href="#" class="scrollup" aria-label="">&nbsp;</a>
