@@ -37,7 +37,7 @@
 						breakpoint: 768,
 						settings: {
 							arrows: false,
-							centerMode: true,
+							centerMode: false,
 							centerPadding: '40px',
 							slidesToShow: 4
 						}
@@ -46,7 +46,7 @@
 						breakpoint: 480,
 						settings: {
 							arrows: false,
-							centerMode: true,
+							centerMode: false,
 							centerPadding: '40px',
 							slidesToShow: 3
 						}
@@ -57,18 +57,6 @@
 
 		$('ul.menu-movil a').on('click', function(){
 			$(".navbar-toggler").click();
-		});
-
-		$(".card-paquetes .card-header").matchHeight({
-			byRow: false
-		});
-
-		$(".box-paquete-features").matchHeight({
-			byRow: false
-		});
-		
-		$(".box-paquete-notes").matchHeight({
-			byRow: false
 		});
 
 		if ($('.floating').length > 0) {
@@ -192,11 +180,6 @@
 				$("html, body").animate({scrollTop:0},600);
 				return false;
 			});
-		};
-
-
-		if ( $('#servicios #particles-servicios').length > 0 ) {
-			particlesJS.load('particles-servicios', 'assets/particlesjs-config.json', function () { });
 		};
 
 

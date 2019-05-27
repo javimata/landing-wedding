@@ -71,7 +71,7 @@ body {
   }
 }
 #header {
-  background: rgba(0, 0, 0, 0);
+  background: #fff;
   color: #fff;
   z-index: 1001;
   -webkit-transition: all 300ms;
@@ -84,16 +84,17 @@ body {
   -webkit-transition: all 300ms;
   transition: all 300ms;
 }
+#header .navbar-toggler .navbar-toggler-icon {
+  color: #000;
+}
 #header nav.navbar ul.navbar-nav li {
   text-align: center;
   padding: 10px 0;
   font-size: 16px;
-  font-family: 'Lato', serif;
   font-weight: 400;
 }
 #header nav.navbar ul.navbar-nav li a {
   font-size: 16px;
-  font-family: 'Lato', serif;
   font-weight: 400;
   letter-spacing: 1px;
   padding: 0 1rem;
@@ -103,29 +104,21 @@ body {
 #header nav.navbar ul.navbar-nav li:hover a {
   color: #aea1ea;
 }
+#header .bg-menu {
+  position: absolute;
+  z-index: 1099;
+  background: #fff;
+  top: 68px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
+}
 #header a.navbar-brand img {
   height: auto;
-}
-#header .bg-menu {
-  background: rgba(0, 0, 0, 0.9);
 }
 #header ul.menu-movil li {
   padding: 10px 0;
 }
-#header.opened,
-#header.sticky {
-  background: rgba(0, 0, 0, 0);
-  height: 60px;
-}
-#header.opened a.navbar-brand img,
-#header.sticky a.navbar-brand img {
-  height: 40px;
-}
-@media (max-width: 991px) {
-  #header.opened a.navbar-brand img,
-  #header.sticky a.navbar-brand img {
-    height: auto;
-  }
+#header ul.menu-movil li i {
+  color: #000;
 }
 section#slider {
   text-shadow: 3px 3px 5px #000;
@@ -255,51 +248,6 @@ section#copyright a {
 .slide-logos .slick-slide img {
   display: inline-block;
 }
-.modal#popup_cotiza .modal-content {
-  border-radius: 6px;
-}
-.modal#popup_cotiza .modal-content .modal-header {
-  background: #000;
-  border-bottom: 0;
-}
-.modal#popup_cotiza .modal-content .modal-header .logo-popup {
-  width: 100%;
-}
-.modal#popup_cotiza .modal-content .modal-header button.close {
-  position: absolute;
-  padding: 0 !important;
-  margin: 0 !important;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  background: #000;
-  color: #fff;
-  border: 2px solid #fff;
-  top: -10px;
-  right: -10px;
-  opacity: 1;
-}
-.modal#popup_cotiza .modal-content .modal-body {
-  padding: 0;
-}
-.modal#popup_cotiza .modal-content .modal-body .col-fondo {
-  background: url('../../images/fondo-beneficios.jpg');
-  background-position: center center;
-  background-size: cover;
-}
-.modal#popup_cotiza .modal-content .modal-body .box-popup-content {
-  padding: 2em;
-}
-.modal#popup_cotiza .modal-content .modal-body a {
-  color: #fff;
-}
-.modal#popup_cotiza .modal-content .modal-body .form-cotiza-popup {
-  margin: 1em auto 0;
-  width: 90%;
-}
-.modal#popup_cotiza .modal-content .modal-body .form-group:last-child {
-  margin-bottom: 0;
-}
 .loading {
   width: 100%;
   height: 100%;
@@ -379,9 +327,6 @@ h5,
 h6 {
   padding: 0;
   margin: 0;
-}
-.img-responsive {
-  display: inline-block;
 }
 .btn.btn-default {
   color: #fff;

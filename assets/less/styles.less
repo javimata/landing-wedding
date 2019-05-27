@@ -72,7 +72,7 @@ body {
 }
 
 #header {
-	background: rgba(0,0,0,0);
+	background: @white;
 	color: @white;
 	z-index: 1001;
 	transition: all 300ms;
@@ -82,17 +82,20 @@ body {
 			transition: all 300ms;
 		}
 	}
+	.navbar-toggler {
+		.navbar-toggler-icon {
+			color: @black;
+		}
+	}
 	nav.navbar {
 		ul.navbar-nav {
 			li {
 				text-align: center;
 				padding: 10px 0;
 				font-size: 16px;
-				font-family: @font1;
 				font-weight: 400;
 				a {
 					font-size: 16px;
-					font-family: @font1;
 					font-weight: 400;
 					letter-spacing: 1px;
 					padding: 0 1rem;
@@ -106,28 +109,20 @@ body {
 			}
 		}
 	}
+	.bg-menu {
+		position: absolute;
+		z-index: 1099;
+		background: @white;
+		top: 68px;
+		box-shadow: 0 10px 10px rgba(0,0,0,.3);
+	}	
 	a.navbar-brand img{
 		height: auto;
 	}
-	.bg-menu {
-		background: rgba(0,0,0,0.9);
-	}
 	ul.menu-movil li {
 		padding: 10px 0;
-	}
-	&.opened,
-	&.sticky {
-		background: rgba(0,0,0,0);
-		height: 60px;
-		a.navbar-brand {
-			img {
-				height: 40px;
-			}
-			@media ( max-width: 991px ) {
-				img {
-					height: auto;
-				}
-			}
+		i {
+			color: @black;
 		}
 	}
 }
@@ -280,56 +275,6 @@ section#copyright {
 }
 
 
-.modal#popup_cotiza {
-	.modal-content {
-		border-radius: 6px;
-		.modal-header {
-			background: @black;
-			border-bottom: 0;
-			.logo-popup {
-				width: 100%;
-			}
-			button.close {
-				position: absolute;
-				padding: 0 !important;
-				margin: 0 !important;
-				width: 30px;
-				height: 30px;
-				border-radius: 50%;
-				background: @black;
-				color: @white;
-				border: 2px solid @white;
-				top: -10px;
-				right: -10px;
-				opacity: 1;
-			}
-		}
-		.modal-body {
-			padding: 0;
-			.col-fondo {
-				background: url('../../images/fondo-beneficios.jpg');
-				background-position: center center;
-				background-size: cover;
-			}
-			.box-popup-content {
-				padding: 2em;
-			}
-			a {
-				color: @white;
-			}
-			.form-cotiza-popup {
-				margin: 1em auto 0;
-				width: 90%;
-			}
-			.form-group {
-				&:last-child {
-					margin-bottom: 0;
-				}
-			}
-		}
-	}
-}
-
 
 
 .loading {
@@ -398,10 +343,6 @@ button:active {
 h1,h2,h3,h4,h5,h6 {
 	padding: 0;
 	margin: 0;
-}
-
-.img-responsive {
-	display: inline-block;
 }
 
 .btn.btn-default {

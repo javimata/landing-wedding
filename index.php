@@ -110,7 +110,7 @@ $config = getConfig();
 					<div class="col-8">
 						<nav class="navbar navbar-expand-lg float-right float-lg-none p-0" data-aos="fade-right" data-aos-delay="300">
 							<button class="navbar-toggler p-0" type="button" data-toggle="collapse" data-target="#navbarMain2" aria-controls="navbarMain2" aria-expanded="false" aria-label="Toggle navigation">
-								<span class="navbar-toggler-icon text-white d-inline"><i class="fas fa-bars fa-lg"></i></span>
+								<span class="navbar-toggler-icon d-inline"><i class="fas fa-bars fa-lg"></i></span>
 							</button>
 							<div class="collapse navbar-collapse" id="navbarMain">
 								<ul class="navbar-nav w-100 justify-content-end align-items-end">
@@ -154,7 +154,7 @@ $config = getConfig();
 			<div class="container">
 				<div class="row">
 					
-					<div class="col-sm-6 col-md-3">
+					<div class="col-6 col-md-3">
 						<div class="box-servicios text-center" data-aos="fade-up" data-aos-delay="300">
 							<div class="box-servicios-icon mb-3">
 								<span class="fa-stack fa-2x">
@@ -168,7 +168,7 @@ $config = getConfig();
 							</div>
 						</div>
 					</div>
-					<div class="col-sm-6 col-md-3">
+					<div class="col-6 col-md-3">
 						<div class="box-servicios text-center" data-aos="fade-up" data-aos-delay="600">
 							<div class="box-servicios-icon mb-3">
 								<span class="fa-stack fa-2x">
@@ -182,7 +182,7 @@ $config = getConfig();
 							</div>
 						</div>
 					</div>
-					<div class="col-sm-6 col-md-3">
+					<div class="col-6 col-md-3">
 						<div class="box-servicios text-center" data-aos="fade-up" data-aos-delay="900">
 							<div class="box-servicios-icon mb-3">
 								<span class="fa-stack fa-2x">
@@ -196,7 +196,7 @@ $config = getConfig();
 							</div>
 						</div>
 					</div>
-					<div class="col-sm-6 col-md-3">
+					<div class="col-6 col-md-3">
 						<div class="box-servicios text-center" data-aos="fade-up" data-aos-delay="1200">
 							<div class="box-servicios-icon mb-3">
 								<span class="fa-stack fa-2x">
@@ -285,7 +285,7 @@ $config = getConfig();
 			
 			<div class="container pt-md-4">
 				<div class="row">
-					<div class="col-lg-3">
+					<div class="d-none d-lg-block col-lg-3">
 						<div class="logo-footer">
 							<img src="images/logo.png" alt="<?php echo $config->info->titulo; ?>" width="151" height="70" class="img-fluid">
 						</div>
@@ -297,12 +297,12 @@ $config = getConfig();
 							</ul>
 						</div>
 					</div>
-					<div class="col-lg-2">
+					<div class="col-6 col-lg-2">
 						<ul class="navbar-nav w-100">
 							<?php echo createMenu($config->menu, 'li'); ?>
 						</ul>
 					</div>
-					<div class="col-lg-3">
+					<div class="col-6 col-lg-3">
 						<div class="box-direccion-footer">
 
 							<?php echo $config->contactos->direccion; ?><br>
@@ -313,7 +313,7 @@ $config = getConfig();
 
 						</div>
 					</div>
-					<div class="col-lg-4">
+					<div class="col-12 col-lg-4 mt-5 mt-lg-0">
 						<div class="form-title mb-3">
 							<h5>Regístrate en nuestro Newsletter</h5>
 						</div>
