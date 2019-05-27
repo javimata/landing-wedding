@@ -62,11 +62,11 @@
 						data-paddingleft="[0,0,0,0]"
 						style="z-index: 7; white-space: nowrap; font-size: 30px; line-height: 40px; font-weight: 400; color: #ffffff; letter-spacing: 0px;">
 						<ul class="list-check list-unstyled">
-							<li><img src="images/list-check.png" class="img-fluid"> Lorem, ipsum.</li>
-							<li><img src="images/list-check.png" class="img-fluid"> Lorem ipsum dolor sit.</li>
-							<li><img src="images/list-check.png" class="img-fluid"> Lorem ipsum dolor sit amet.</li>
-							<li><img src="images/list-check.png" class="img-fluid"> Lorem, ipsum.</li>
-							<li><img src="images/list-check.png" class="img-fluid"> Lorem, ipsum dolor.</li>
+							<li><img src="images/list-check.png" width="33" height="26" class="img-fluid"> Lorem, ipsum.</li>
+							<li><img src="images/list-check.png" width="33" height="26" class="img-fluid"> Lorem ipsum dolor sit.</li>
+							<li><img src="images/list-check.png" width="33" height="26" class="img-fluid"> Lorem ipsum dolor sit amet.</li>
+							<li><img src="images/list-check.png" width="33" height="26" class="img-fluid"> Lorem, ipsum.</li>
+							<li><img src="images/list-check.png" width="33" height="26" class="img-fluid"> Lorem, ipsum dolor.</li>
 						</ul>
 					</div>
 				</li>
@@ -93,7 +93,7 @@
 						data-paddingright="[0,0,0,0]"
 						data-paddingbottom="[0,0,0,0]"
 						data-paddingleft="[0,0,0,0]"
-						style="z-index: 5; white-space: nowrap; font-size: 60px; line-height: 60px; font-weight: 700; color: #ffffff; letter-spacing: 0px;" >MARKETING DIGITAL</h1>
+						style="z-index: 5; white-space: nowrap; font-size: 60px; line-height: 60px; font-weight: 700; color: #ffffff; letter-spacing: 0px;" >DESARROLLO WEB</h1>
 
 					<!-- LAYER NR. 2 -->
 					<h3 class="tp-caption tp-resizeme" 
@@ -129,11 +129,11 @@
 						data-paddingleft="[0,0,0,0]"
 						style="z-index: 7; white-space: nowrap; font-size: 30px; line-height: 40px; font-weight: 400; color: #ffffff; letter-spacing: 0px;">
 						<ul class="list-check list-unstyled">
-							<li><img src="images/list-check.png" class="img-fluid"> Lorem, ipsum.</li>
-							<li><img src="images/list-check.png" class="img-fluid"> Lorem ipsum dolor sit.</li>
-							<li><img src="images/list-check.png" class="img-fluid"> Lorem ipsum dolor sit amet.</li>
-							<li><img src="images/list-check.png" class="img-fluid"> Lorem, ipsum.</li>
-							<li><img src="images/list-check.png" class="img-fluid"> Lorem, ipsum dolor.</li>
+							<li><img src="images/list-check.png" width="33" height="26" class="img-fluid"> Lorem, ipsum.</li>
+							<li><img src="images/list-check.png" width="33" height="26" class="img-fluid"> Lorem ipsum dolor sit.</li>
+							<li><img src="images/list-check.png" width="33" height="26" class="img-fluid"> Lorem ipsum dolor sit amet.</li>
+							<li><img src="images/list-check.png" width="33" height="26" class="img-fluid"> Lorem, ipsum.</li>
+							<li><img src="images/list-check.png" width="33" height="26" class="img-fluid"> Lorem, ipsum dolor.</li>
 						</ul>
 					</div>
 				</li>				
