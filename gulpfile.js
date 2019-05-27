@@ -13,16 +13,33 @@ var config = JSON.parse(fs.readFileSync('./config.json')),
     assetsAPPJS = new Array();
 
 assetsAPPCSS.push(nodepath + 'bootstrap/dist/css/bootstrap.min.css');
+assetsAPPJS.push(nodepath + 'bootstrap/dist/js/bootstrap.bundle.min.js');
 
 if ( config.configuracion.assets.fontawesome == 1 ) {
     assetsAPPCSS.push(nodepath + '@fortawesome/fontawesome-free/css/all.min.css');
 }
 if (config.configuracion.revolution == 1) {
     assetsAPPCSS.push('./revolution/css/settings.css');
+
+    assetsAPPJS.push(
+        './revolution/js/jquery.themepunch.tools.min.js',
+        './revolution/js/jquery.themepunch.revolution.min.js',
+        './revolution/js/extensions/revolution.extension.actions.min.js',
+        './revolution/js/extensions/revolution.extension.carousel.min.js',
+        './revolution/js/extensions/revolution.extension.kenburn.min.js',
+        './revolution/js/extensions/revolution.extension.layeranimation.min.js',
+        './revolution/js/extensions/revolution.extension.migration.min.js',
+        './revolution/js/extensions/revolution.extension.navigation.min.js',
+        './revolution/js/extensions/revolution.extension.parallax.min.js',
+        './revolution/js/extensions/revolution.extension.slideanims.min.js',
+        './revolution/js/extensions/revolution.extension.video.min.js'
+    );
 }
 if (config.configuracion.assets.aos == 1) {
     assetsAPPCSS.push(nodepath + 'aos/dist/aos.css');
+    assetsAPPJS.push(nodepath + 'aos/dist/aos.js');
 }
+
 if (config.configuracion.assets.animate == 1) {
     assetsAPPCSS.push(nodepath + 'animate.css/animate.min.css');
 }
@@ -86,19 +103,12 @@ gulp.task('compile-css', function (done) {
  */
 gulp.task('compile-js', function (done) {
     gulp.src([
-        nodepath + 'jquery/dist/jquery.min.js', 
-        nodepath + 'aos/dist/aos.js'
+        nodepath + 'jquery/dist/jquery.min.js' 
     ])
         .pipe(concat('main.js'))
         .pipe(uglify())
         .pipe(gulp.dest('./dist/js/'));
 
-    gulp.src([
-        nodepath + 'bootstrap/dist/js/bootstrap.bundle.min.js'
-    ])
-        .pipe(concat('bootstrap.bundle.js'))
-        .pipe(uglify())
-        .pipe(gulp.dest('./dist/js/'));
 
     gulp.src(assetsAPPJS)
         .pipe(concat('app.js'))
@@ -106,22 +116,6 @@ gulp.task('compile-js', function (done) {
         .pipe(gulp.dest('./dist/js/'));
 
     if (config.configuracion.revolution == 1) {
-        gulp.src([
-            './revolution/js/jquery.themepunch.tools.min.js',
-            './revolution/js/jquery.themepunch.revolution.min.js',
-            './revolution/js/extensions/revolution.extension.actions.min.js',
-            './revolution/js/extensions/revolution.extension.carousel.min.js',
-            './revolution/js/extensions/revolution.extension.kenburn.min.js',
-            './revolution/js/extensions/revolution.extension.layeranimation.min.js',
-            './revolution/js/extensions/revolution.extension.migration.min.js',
-            './revolution/js/extensions/revolution.extension.navigation.min.js',
-            './revolution/js/extensions/revolution.extension.parallax.min.js',
-            './revolution/js/extensions/revolution.extension.slideanims.min.js',
-            './revolution/js/extensions/revolution.extension.video.min.js'
-        ])
-        .pipe(concat('revolution.js'))
-        .pipe(uglify())
-        .pipe(gulp.dest('./dist/js/'));
 
         gulp.src([
             './revolution/fonts/revicons/**'])

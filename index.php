@@ -340,12 +340,7 @@ $config = getConfig();
 		<?php endif ?>
 
 		<script src="dist/js/main.js"></script>
-		<script defer src="dist/js/bootstrap.bundle.js"></script>
 		<script defer src="dist/js/app.js"></script>
-
-		<?php if ( $config->configuracion->revolution == 1 ): ?>
-		<script defer src="dist/js/revolution.js"></script>
-		<?php endif ?>
 
 		<?php if ( $config->configuracion->gotop == 1 ): ?>
 		<a href="#" class="scrollup" aria-label="">&nbsp;</a>
