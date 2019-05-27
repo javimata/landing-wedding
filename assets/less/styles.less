@@ -33,16 +33,16 @@ body {
 	z-index: 1099;
 	transition: all 300ms;
 	&.sticky-top {
-		top: 80px;
+		top: 110px;
 		width: 50px;
 		height: 50px;
 	}
 	@media ( max-width: 767px ) {
 		width: 40px;
 		height: 40px;
-		top: 80px;
+		top: 120px;
 		&.sticky-top {
-			top: 70px;
+			top: 100px;
 			width: 40px;
 			height: 40px;
 		}
@@ -55,16 +55,16 @@ body {
 	z-index: 1099;
 	transition: all 300ms;
 	&.sticky-top {
-		top: 140px;
+		top: 170px;
 		width: 50px;
 		height: 50px;
 	}
 	@media ( max-width: 767px ) {
 		width: 40px;
 		height: 40px;
-		top: 130px;
+		top: 170px;
 		&.sticky-top {
-			top: 120px;
+			top: 150px;
 			width: 40px;
 			height: 40px;
 		}
@@ -72,10 +72,12 @@ body {
 }
 
 #header {
-	background: @white;
+	background: rgba(255,255,255,1);
 	color: @white;
-	z-index: 1001;
+	z-index: 2001;
 	transition: all 300ms;
+	position: absolute;
+	width: 100%;
 	a {
 		color: @black;
 		&.navbar-brand {
@@ -113,7 +115,8 @@ body {
 		position: absolute;
 		z-index: 1099;
 		background: @white;
-		top: 68px;
+		top: 100%;
+		left: 0;
 		box-shadow: 0 10px 10px rgba(0,0,0,.3);
 	}	
 	a.navbar-brand img{
@@ -124,6 +127,12 @@ body {
 		i {
 			color: @black;
 		}
+	}
+	&.sticky {
+		position: fixed;
+		animation: fadeInDown 600ms;
+		background: fade(@white, 95%);
+		box-shadow: 0 10px 10px rgba(0,0,0,.5);
 	}
 }
 

@@ -13,8 +13,8 @@
 					<!-- LAYER NR. 1 -->
 					<h1 class="tp-caption tp-resizeme" 
 						id="slide-1-layer-1" 
-						data-x="5" 
-						data-y="115" 
+						data-x="15" 
+						data-y="215" 
 						data-width="['auto']"
 						data-height="['auto']"
 						data-type="text" 
@@ -30,8 +30,8 @@
 					<!-- LAYER NR. 2 -->
 					<h3 class="tp-caption tp-resizeme" 
 						id="slide-1-layer-2" 
-						data-x="5" 
-						data-y="180" 
+						data-x="15" 
+						data-y="280" 
 						data-width="['auto']"
 						data-height="['auto']"
 						data-type="text" 
@@ -47,8 +47,8 @@
 					<!-- LAYER NR. 3 -->
 					<div class="tp-caption" 
 						id="slide-1-layer-3" 
-						data-x="5" 
-						data-y="250" 
+						data-x="15" 
+						data-y="350" 
 						data-width="['auto']"
 						data-height="['auto']"
 						data-type="text" 

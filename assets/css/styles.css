@@ -29,7 +29,7 @@ body {
   transition: all 300ms;
 }
 .floating.sticky-top {
-  top: 80px;
+  top: 110px;
   width: 50px;
   height: 50px;
 }
@@ -37,10 +37,10 @@ body {
   .floating {
     width: 40px;
     height: 40px;
-    top: 80px;
+    top: 120px;
   }
   .floating.sticky-top {
-    top: 70px;
+    top: 100px;
     width: 40px;
     height: 40px;
   }
@@ -54,7 +54,7 @@ body {
   transition: all 300ms;
 }
 .floating-messenger.sticky-top {
-  top: 140px;
+  top: 170px;
   width: 50px;
   height: 50px;
 }
@@ -62,20 +62,22 @@ body {
   .floating-messenger {
     width: 40px;
     height: 40px;
-    top: 130px;
+    top: 170px;
   }
   .floating-messenger.sticky-top {
-    top: 120px;
+    top: 150px;
     width: 40px;
     height: 40px;
   }
 }
 #header {
-  background: #fff;
+  background: #ffffff;
   color: #fff;
-  z-index: 1001;
+  z-index: 2001;
   -webkit-transition: all 300ms;
   transition: all 300ms;
+  position: absolute;
+  width: 100%;
 }
 #header a {
   color: #000;
@@ -108,7 +110,8 @@ body {
   position: absolute;
   z-index: 1099;
   background: #fff;
-  top: 68px;
+  top: 100%;
+  left: 0;
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
 }
 #header a.navbar-brand img {
@@ -119,6 +122,13 @@ body {
 }
 #header ul.menu-movil li i {
   color: #000;
+}
+#header.sticky {
+  position: fixed;
+  -webkit-animation: fadeInDown 600ms;
+          animation: fadeInDown 600ms;
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
 }
 section#slider {
   text-shadow: 3px 3px 5px #000;

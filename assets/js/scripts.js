@@ -10,6 +10,7 @@
 		var jam_gotop = $('body').data("gotop");
 		var jam_popup = $('body').data("popup");
 		var jam_particlesFooter = $('body').data("particlesFooter");
+		var alto = $('section#header').height();
 
 		AOS.init({
 			easing: 'ease-out-back',
@@ -192,19 +193,21 @@
 		 * Agrega sticky
 		*/
 		$(window).scroll(function () {
-			if ($(this).scrollTop() > 100) {
+			if ($(this).scrollTop() > alto) {
 				$('section#header').addClass("sticky");
 			} else {
 				$('section#header').removeClass("sticky");
 			}
 		});
-
+		
 		$('#navbarMain2').on('show.bs.collapse', function () {
 			$('section#header').addClass("opened");
+			$('.floating,.floating-messenger').fadeOut();
 		});
 
 		$('#navbarMain2').on('hidden.bs.collapse', function () {
 			$('section#header').removeClass("opened");
+			$('.floating,.floating-messenger').fadeIn();
 		});
 		
 		/**
