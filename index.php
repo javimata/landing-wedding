@@ -155,7 +155,7 @@ $config = getConfig();
 				<div class="row">
 					
 					<div class="col-sm-6 col-md-3">
-						<div class="box-servicios text-center">
+						<div class="box-servicios text-center" data-aos="fade-up" data-aos-delay="300">
 							<div class="box-servicios-icon mb-3">
 								<span class="fa-stack fa-2x">
 									<i class="fas fa-circle fa-stack-2x"></i>
@@ -169,7 +169,7 @@ $config = getConfig();
 						</div>
 					</div>
 					<div class="col-sm-6 col-md-3">
-						<div class="box-servicios text-center">
+						<div class="box-servicios text-center" data-aos="fade-up" data-aos-delay="600">
 							<div class="box-servicios-icon mb-3">
 								<span class="fa-stack fa-2x">
 									<i class="fas fa-circle fa-stack-2x"></i>
@@ -183,7 +183,7 @@ $config = getConfig();
 						</div>
 					</div>
 					<div class="col-sm-6 col-md-3">
-						<div class="box-servicios text-center">
+						<div class="box-servicios text-center" data-aos="fade-up" data-aos-delay="900">
 							<div class="box-servicios-icon mb-3">
 								<span class="fa-stack fa-2x">
 									<i class="fas fa-circle fa-stack-2x"></i>
@@ -197,7 +197,7 @@ $config = getConfig();
 						</div>
 					</div>
 					<div class="col-sm-6 col-md-3">
-						<div class="box-servicios text-center">
+						<div class="box-servicios text-center" data-aos="fade-up" data-aos-delay="1200">
 							<div class="box-servicios-icon mb-3">
 								<span class="fa-stack fa-2x">
 									<i class="fas fa-circle fa-stack-2x"></i>
@@ -315,7 +315,7 @@ $config = getConfig();
 					</div>
 					<div class="col-lg-4">
 						<div class="form-title mb-3">
-							<h5>Registrate en nuestro Newsletter</h5>
+							<h5>Regístrate en nuestro Newsletter</h5>
 						</div>
 						<?php echo createForm( $config->forms->newsletter ); ?>
 					</div>
