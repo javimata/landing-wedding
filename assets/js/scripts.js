@@ -11,6 +11,9 @@
 		var jam_popup = $('body').data("popup");
 		var jam_particlesFooter = $('body').data("particlesFooter");
 		var alto = $('section#header').height();
+		$(window).resize(function(){
+			alto = $('section#header').height();
+		});
 
 		AOS.init({
 			easing: 'ease-out-back',
@@ -237,7 +240,7 @@
 					// var offsetpos = (target.offset().top - 290);
 					// alert( target + offsetpos );
 					$('html, body').animate({
-					scrollTop: target.offset().top
+						scrollTop: target.offset().top - alto
 					}, 1000, function() {
 					// Callback after animation
 					// Must change focus!

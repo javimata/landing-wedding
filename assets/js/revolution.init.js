@@ -12,11 +12,11 @@ jQuery(function($) {
         dottedOverlay: "none",
         delay: 9000,
         navigation: {
-            keyboardNavigation: "off",
+            keyboardNavigation: "on",
             keyboard_direction: "horizontal",
             mouseScrollNavigation: "off",
             mouseScrollReverse: "default",
-            onHoverStop: "off",
+            onHoverStop: "on",
             arrows: {
                 style: "hesperiden",
                 enable: false,
@@ -35,6 +35,34 @@ jQuery(function($) {
                     h_offset: 20,
                     v_offset: 0
                 }
+            },
+            bullets: {
+                enable: true,
+                style: 'hermes',
+                tmp: '',
+                direction: 'horizontal',
+                rtl: false,
+                container: 'slider',
+                h_align: 'center',
+                v_align: 'bottom',
+                h_offset: 0,
+                v_offset: 20,
+                space: 5,
+                hide_onleave: false,
+                hide_onmobile: false,
+                hide_under: 0,
+                hide_over: 9999,
+                hide_delay: 200,
+                hide_delay_mobile: 1200
+            },
+            touch: {
+
+                touchenabled: 'on',
+                swipe_threshold: 75,
+                swipe_min_touches: 1,
+                swipe_direction: 'horizontal',
+                drag_block_vertical: true
+
             }
         },
         parallax: {
@@ -47,14 +75,14 @@ jQuery(function($) {
         },
         visibilityLevels: [1120, 1024, 778, 480],
         gridwidth: 1120,
-        gridheight: 690,
+        gridheight: 600,
         lazyType: "none",
         shadow: 0,
         spinner: "spinner4",
         stopLoop: "off",
         stopAfterLoops: -1,
         stopAtSlide: -1,
-        shuffle: "off",
+        shuffle: "on",
         autoHeight: "off",
         disableProgressBar: "on",
         hideThumbsOnMobile: "off",
