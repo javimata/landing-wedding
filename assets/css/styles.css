@@ -130,19 +130,16 @@ body {
 section#slider {
   text-shadow: 3px 3px 5px #000;
 }
-section#servicios {
-  position: relative;
+section#servicios .box-servicios {
+  cursor: pointer;
 }
-section#servicios .container {
-  z-index: 1;
-  position: relative;
+section#servicios .box-servicios .box-servicios-icon .fa-circle {
+  color: #4f3676;
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
 }
-section#servicios div#particles-servicios {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 0;
+section#servicios .box-servicios:hover .box-servicios-icon .fa-circle {
+  color: #aea1ea;
 }
 section#beneficios {
   background: url('../../images/fondo-beneficios.jpg') no-repeat;
@@ -180,56 +177,6 @@ header#header-section .title-section {
   .box-content h2 {
     font-size: 45px;
   }
-}
-.card.card-paquetes {
-  border: 0;
-  background: #ffffff;
-}
-.card.card-paquetes .card-header {
-  background: #4f3676;
-  color: #fff;
-  font-size: 20px;
-  padding: .75rem 0;
-}
-.card.card-paquetes .card-header .content-header {
-  padding: 0 1.75rem;
-}
-.card.card-paquetes .card-header .content-header h3 {
-  font-size: 45px;
-}
-.card.card-paquetes .card-body {
-  padding: 2rem 1rem;
-}
-.card.card-paquetes .card-body .box-paquete-features ul {
-  list-style: none;
-  padding: 0;
-  line-height: 2em;
-}
-.card.card-paquetes .card-body .box-paquete-features ul li {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  font-size: 16px;
-}
-.card.card-paquetes .card-body .box-paquete-features ul li i {
-  margin-right: 8px;
-}
-.card.card-paquetes .card-body .box-paquete-features ul li:hover {
-  background: #f5f5f5;
-}
-.card.card-paquetes .card-footer {
-  border: 0;
-  background: transparent;
-  margin: 0 0 1.5rem;
-}
-.card.card-paquetes.featured .card-header {
-  padding: 0 0 .75rem;
-}
-.card.card-paquetes.featured .card-header .feature {
-  background: #df9f15;
-  margin-bottom: .5rem;
-  border-radius: .25rem .25rem 0 0;
-  font-size: 14px;
-  padding: .25rem;
-  margin-top: -10px;
 }
 .list-check li {
   padding-bottom: 10px;
@@ -279,6 +226,14 @@ footer#footer div#particles-footer {
   left: 0;
   width: 100%;
   z-index: 0;
+}
+section#copyright {
+  background: #000;
+  color: #fff;
+  font-size: 14px;
+}
+section#copyright a {
+  color: #fff;
 }
 .slide-logos {
   display: none;

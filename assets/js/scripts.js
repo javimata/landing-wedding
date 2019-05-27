@@ -14,7 +14,7 @@
 		AOS.init({
 			easing: 'ease-out-back',
 			duration: 1000,
-			once: false
+			once: true
 		});
 
 		if ( $('.slide-logos').length > 0 ) {

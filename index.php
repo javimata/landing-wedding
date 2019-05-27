@@ -153,88 +153,64 @@ $config = getConfig();
 
 			<div class="container">
 				<div class="row">
-					<div class="col-lg-4">
-						<div class="card card-paquetes mb-3 mb-lg-0 shadow" data-aos="fade-up" data-aos-delay="300">
-							<div class="card-header text-center">
-								<div class="content-header">
-									<h3>Básico</h3>
-									<h5>50mb de espacio</h5>
-									<small>Recomendado para landing pages</small>
-								</div>
+					
+					<div class="col-sm-6 col-md-3">
+						<div class="box-servicios text-center">
+							<div class="box-servicios-icon mb-3">
+								<span class="fa-stack fa-2x">
+									<i class="fas fa-circle fa-stack-2x"></i>
+									<i class="fas fa-globe fa-stack-1x fa-inverse"></i>
+								</span>
 							</div>
-							<div class="card-body">
-								<div class="box-paquete-features">
-									<ul>
-										<li><i class="far fa-hdd fa-lg"></i> 50mb de espacio</li> 
-										<li><i class="far fa-envelope fa-lg"></i> Cuentas de correo ilimitadas</li> 
-										<li><i class="fas fa-shield-alt fa-lg"></i> Certificado SSL</li>
-										<li><i class="fas fa-tools fa-lg"></i> cPanel&copy;</li>
-									</ul>
-								</div>
-								<div class="box-paquete-notes text-center mt-4">
-									<h2 class="mb-3">$599 mxn</h2>
-								</div>
-							</div>
-							<div class="card-footer">
-								<a href="#contacto" class="btn-popup btn btn-primary btn-full">¡Contratar ahora!</a>
+							<div class="box-servicios-content">
+								<h4 class="mb-2">Desarrollo web</h4>
+								<p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
 							</div>
 						</div>
 					</div>
-					<div class="col-lg-4">
-						<div class="card card-paquetes mb-3 mb-lg-0 shadow featured" data-aos="fade-up" data-aos-delay="600">
-							<div class="card-header text-center">
-								<div class="feature">Más vendido</div>
-								<div class="content-header">
-									<h3>Profesional</h3>
-									<h5>200mb de espacio</h5>
-									<small>Recomendado para Sitios básicos</small>
-								</div>
+					<div class="col-sm-6 col-md-3">
+						<div class="box-servicios text-center">
+							<div class="box-servicios-icon mb-3">
+								<span class="fa-stack fa-2x">
+									<i class="fas fa-circle fa-stack-2x"></i>
+									<i class="fas fa-ad fa-stack-1x fa-inverse"></i>
+								</span>
 							</div>
-							<div class="card-body">
-								<div class="box-paquete-features">
-									<ul>
-										<li><i class="far fa-hdd fa-lg"></i> 200mb de espacio</li> 
-										<li><i class="far fa-envelope fa-lg"></i> Cuentas de correo ilimitadas</li> 
-										<li><i class="fas fa-shield-alt fa-lg"></i> Certificado SSL</li>
-										<li><i class="fas fa-tools fa-lg"></i> cPanel&copy;</li>
-									</ul>
-								</div>
-								<div class="box-paquete-notes text-center mt-4">
-									<h2>$999 mxn</h2>
-								</div>
-							</div>
-							<div class="card-footer">
-								<a href="#contacto" class="btn-popup btn btn-primary btn-full">¡Contratar ahora!</a>
+							<div class="box-servicios-content">
+								<h4 class="mb-2">Web marketing</h4>
+								<p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
 							</div>
 						</div>
 					</div>
-					<div class="col-lg-4">
-						<div class="card card-paquetes mb-3 mb-lg-0 shadow" data-aos="fade-up" data-aos-delay="900">
-							<div class="card-header text-center">
-								<div class="content-header">
-									<h3>Plus</h3>
-									<h5>500mb</h5>
-									<small>Recomendado para CMS's</small>
-								</div>
+					<div class="col-sm-6 col-md-3">
+						<div class="box-servicios text-center">
+							<div class="box-servicios-icon mb-3">
+								<span class="fa-stack fa-2x">
+									<i class="fas fa-circle fa-stack-2x"></i>
+									<i class="fas fa-chalkboard-teacher fa-stack-1x fa-inverse"></i>
+								</span>
 							</div>
-							<div class="card-body">
-								<div class="box-paquete-features">
-									<ul>
-										<li><i class="far fa-hdd fa-lg"></i> 500mb de espacio</li> 
-										<li><i class="far fa-envelope fa-lg"></i> Cuentas de correo ilimitadas</li> 
-										<li><i class="fas fa-shield-alt fa-lg"></i> Certificado SSL</li>
-										<li><i class="fas fa-tools fa-lg"></i> cPanel&copy;</li>
-									</ul>
-								</div>
-								<div class="box-paquete-notes text-center mt-4">
-									<h2 class="mb-3">$1,299 mxn</h2>
-								</div>
-							</div>
-							<div class="card-footer">
-								<a href="#contacto" class="btn-popup btn btn-primary btn-full">¡Contratar ahora!</a>
+							<div class="box-servicios-content">
+								<h4 class="mb-2">Consultoria web</h4>
+								<p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
 							</div>
 						</div>
 					</div>
+					<div class="col-sm-6 col-md-3">
+						<div class="box-servicios text-center">
+							<div class="box-servicios-icon mb-3">
+								<span class="fa-stack fa-2x">
+									<i class="fas fa-circle fa-stack-2x"></i>
+									<i class="fas fa-mail-bulk fa-stack-1x fa-inverse"></i>
+								</span>
+							</div>
+							<div class="box-servicios-content">
+								<h4 class="mb-2">Social media</h4>
+								<p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+							</div>
+						</div>
+					</div>
+
 				</div>
 			</div>
 
@@ -295,15 +271,7 @@ $config = getConfig();
 								Es posible cotizar según tus necesidades, déjanos tus datos y te contactamos para presentarte una propuesta personalizada.
 							</div>
 
-							<?php createForm( $config->forms->contacto ); ?>
-
-						</div>
-
-						<div class="box-direccion-footer text-center" data-aos="fade-down" data-aos-delay="300">
-
-							<?php echo $config->contactos->direccion; ?><br>
-							Teléfono y Whatsapp<br>
-							<i class="fas fa-phone pl-lg-2"></i> <a href="tel:<?php echo cleanString($config->contactos->telefono); ?>"><?php echo $config->contactos->telefono; ?></a>
+							<?php createForm( $config->forms->cotiza ); ?>
 
 						</div>
 
@@ -313,33 +281,59 @@ $config = getConfig();
 			</div>
 		</section>
 
-		<footer id="footer" class="py-5">
+		<footer id="footer" class="pt-5 pb-3">
 			
 			<div class="container pt-md-4">
 				<div class="row">
-					<div class="col-lg-4">
+					<div class="col-lg-3">
 						<div class="logo-footer">
 							<img src="images/logo.png" alt="<?php echo $config->info->titulo; ?>" width="151" height="70" class="img-fluid">
 						</div>
 						<div class="redes-footer py-3">
 							<ul class="list-inline">
 								<?php foreach ($config->redes as $red): ?>
-								<li class="list-inline-item"><a href="<?php echo $red->url ?>" target="_blank"><i class="<?php echo $red->icon ?> fa-2x"></i></a></li>
+								<li class="list-inline-item"><a href="<?php echo $red->url ?>" target="_blank"><i class="<?php echo $red->icon ?> fa-lg"></i></a></li>
 								<?php endforeach; ?>
 							</ul>
 						</div>
 					</div>
-					<div class="col-lg-4">
+					<div class="col-lg-2">
 						<ul class="navbar-nav w-100">
 							<?php echo createMenu($config->menu, 'li'); ?>
 						</ul>
 					</div>
-					<div class="col-lg-4">
+					<div class="col-lg-3">
+						<div class="box-direccion-footer">
 
+							<?php echo $config->contactos->direccion; ?><br>
+							<div class="phone-footer mt-3">
+								Teléfono y Whatsapp<br>
+								<i class="fas fa-phone"></i> <a href="tel:<?php echo cleanString($config->contactos->telefono); ?>"><?php echo $config->contactos->telefono; ?></a>
+							</div>
+
+						</div>
+					</div>
+					<div class="col-lg-4">
+						<div class="form-title mb-3">
+							<h5>Registrate en nuestro Newsletter</h5>
+						</div>
+						<?php echo createForm( $config->forms->newsletter ); ?>
 					</div>
 				</div>
 			</div>
 		</footer>
+
+		<section id="copyright">
+			<div class="container">
+				<div class="row">
+					<div class="col text-center">
+						<div class="copy py-2">
+							<?php echo replaceValues( $config->info->copyright ); ?>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 
 		<?php if ( $config->configuracion->popup == 1 ): ?>
 			<?php include_once "popup.php"; ?>

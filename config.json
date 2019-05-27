@@ -11,7 +11,7 @@
     "contactos" : {
         "email" : "atencion.clientes@eldominio.com",
         "telefono": "(00) 000 0000",
-        "direccion": "Direccion conocida Ciudad cercana en algún pais",
+        "direccion": "Direccion conocida<br>Ciudad cercana en algún pais",
         "whatsapp": "000000000",
         "messenger": "#"
     },
@@ -62,17 +62,17 @@
             "class": "",
             "id": "cotiza",
             "method": "",
-            "containerClass": "box-campos mt-0",
+            "containerClass": "row",
             "containerId": "",
             "attribs": {},
             "mailchimpList": "",
-            "titleMail": "Solicitud de cotización - Hosting",
+            "titleMail": "Solicitud de cotización - Landing",
             "successMail": "Gracias por solicitar nuestro folleto, en breve lo recibirá en el email indicado",
             "errorMail": "",
             "errorBox": "caja_error",
             "fields": {
                 "nombre": {
-                    "class": "form-group",
+                    "class": "form-group col-md-6",
                     "id": "",
                     "name": "nombre",
                     "mailchimpField": "FNAME",
@@ -87,7 +87,7 @@
                     }
                 },
                 "email": {
-                    "class": "form-group",
+                    "class": "form-group col-md-6",
                     "id": "",
                     "name": "email",
                     "attribs": {
@@ -95,39 +95,27 @@
                         "class": "form-control border border-dark",
                         "id": "",
                         "value": "",
-                        "placeholder": "Ingresa tu Email",
+                        "placeholder": "Indica tu Email",
                         "attribs": {},
                         "required": 1
                     }
                 },
-                "telefono": {
-                    "class": "form-group",
+                "comentarios": {
+                    "class": "form-group col-12",
                     "id": "",
-                    "name": "telefono",
+                    "name": "comentarios",
                     "attribs": {
                         "type": "text",
                         "class": "form-control border border-dark",
                         "id": "",
                         "value": "",
-                        "placeholder": "Indicanos tu teléfono",
+                        "placeholder": "Ingresa tus comentarios",
                         "attribs": {},
                         "required": 1
                     }
                 },
-                "producto": {
-                    "class": "",
-                    "id": "",
-                    "name": "producto",
-                    "attribs": {
-                        "type": "hidden",
-                        "class": "",
-                        "id": "producto",
-                        "value": "",
-                        "attribs": {}
-                    }
-                },
                 "submit": {
-                    "class": "form-group",
+                    "class": "form-group col-12",
                     "id": "",
                     "attribs": {
                         "type": "submit",
@@ -139,36 +127,22 @@
                 }
             }
         },
-        "contacto": {
+        "newsletter": {
             "action": "",
             "class": "",
-            "id": "contacto",
+            "id": "newsletter",
             "method": "",
             "containerClass": "row",
             "containerId": "",
             "attribs": {},
             "mailchimpList": "",
             "errorBox": "form-group col-12 caja_error",
-            "titleMail": "Solicitud de contacto - Hosting",
-            "successMail": "Gracias por contactarnos, en breve le daremos seguimiento a su solicitud",
+            "titleMail": "Registro en Newsletter - Landing",
+            "successMail": "Gracias por registrarse en nuestro Newsletter",
             "errorMail": "",
             "fields": {
-                "nombre": {
-                    "class": "form-group col-md-6",
-                    "id": "",
-                    "name": "nombre",
-                    "mailchimpField": "FNAME",
-                    "attribs": {
-                        "type": "text",
-                        "class": "form-control",
-                        "id": "",
-                        "value": "",
-                        "placeholder": "Nombre completo",
-                        "required": 1
-                    }
-                },
                 "email": {
-                    "class": "form-group col-md-6",
+                    "class": "form-group col-md-12",
                     "id": "",
                     "name": "email",
                     "attribs": {
@@ -176,32 +150,18 @@
                         "class": "form-control",
                         "id": "",
                         "value": "",
-                        "placeholder": "Email",
+                        "placeholder": "Ingresa tu Email",
                         "required": 1
                     }
                 },
-                "comentarios": {
-                    "class": "form-group col-12",
-                    "id": "",
-                    "name": "comentarios",
-                    "mailchimpField": "",
-                    "attribs": {
-                        "type": "text",
-                        "class": "form-control",
-                        "id": "",
-                        "value": "",
-                        "placeholder": "Comentarios",
-                        "required": 0
-                    }
-                },            
                 "submit": {
                     "class": "form-group col-12 text-center",
                     "id": "",
                     "attribs": {
                         "type": "submit",
-                        "class": "btn btn-primary btn-full px-md-5",
+                        "class": "btn btn-secondary btn-full px-md-5",
                         "id": "",
-                        "value": "Cotizar",
+                        "value": "Registrar ahora",
                         "attribs": {}
                     }
                 }                
