@@ -352,6 +352,10 @@ $config = getConfig();
 		</script>
 		<?php endif; ?>
 
+		<?php if ( $config->configuracion->pwa == 1 ): ?>
+		<script src="sw.js"></script>
+		<?php endif; ?>
+
 		<script async src="dist/js/bundle.js"></script>
 
 	</body>

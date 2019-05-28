@@ -295,6 +295,7 @@
 								ga('send', 'event', 'formulario', 'click', id);
 							};
 							if (typeof fbq == 'function') {
+								fbq('track', 'CompleteRegistration', { content_name: id });
 							}
 
 						}else{
