@@ -16,7 +16,7 @@ assetsAPPCSS.push(nodepath + 'bootstrap/dist/css/bootstrap.min.css');
 assetsAPPJS.push(nodepath + 'bootstrap/dist/js/bootstrap.bundle.min.js');
 
 if ( config.configuracion.assets.fontawesome == 1 ) {
-    assetsAPPCSS.push(nodepath + '@fortawesome/fontawesome-free/css/all.min.css');
+    assetsAPPCSS.push(nodepath + '@fortawesome/fontawesome-free/css/all.css');
 }
 if (config.configuracion.revolution == 1) {
     assetsAPPCSS.push('./revolution/css/settings.css');

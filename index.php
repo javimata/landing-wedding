@@ -45,8 +45,8 @@ $config = getConfig();
 		<?php endif; ?>
 
 		<!-- Bootstrap CSS -->
-		<link rel="stylesheet" href="dist/css/app.css">
-		<link rel="stylesheet" href="dist/css/styles.css">
+		<link rel="stylesheet" media="screen" href="dist/css/app.css">
+		<link rel="stylesheet" media="screen" href="dist/css/styles.css">
 
 		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
