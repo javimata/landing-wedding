@@ -10,6 +10,7 @@
 		var jam_gotop = $('body').data("gotop");
 		var jam_popup = $('body').data("popup");
 		var jam_particlesFooter = $('body').data("particlesFooter");
+		
 		var alto = $('section#header').height();
 		$(window).resize(function(){
 			alto = $('section#header').height();

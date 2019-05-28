@@ -115,12 +115,12 @@ $config = getConfig();
 			<div class="container">
 				<div class="row align-items-center py-1">
 
-					<div class="col-4">
+					<div class="col-5 col-lg-4">
 						<a class="navbar-brand p-1" href="#" data-aos="fade-left" data-aos-delay="0">
 							<img src="<?php echo $config->info->logo; ?>" alt="<?php echo $config->info->titulo; ?>" class="img-fluid" width="151" height="70" />
 						</a>
 					</div>
-					<div class="col-8">
+					<div class="col-7 col-lg-8">
 						<nav class="navbar navbar-expand-lg float-right float-lg-none p-0" data-aos="fade-right" data-aos-delay="300">
 							<button class="navbar-toggler p-0" type="button" data-toggle="collapse" data-target="#navbarMain2" aria-controls="navbarMain2" aria-expanded="false" aria-label="Toggle navigation">
 								<span class="navbar-toggler-icon d-inline"><i class="fas fa-bars fa-lg"></i></span>
@@ -167,7 +167,7 @@ $config = getConfig();
 			<div class="container">
 				<div class="row">
 					
-					<div class="col-6 col-md-3">
+					<div class="col-sm-6 col-md-3">
 						<div class="box-servicios text-center" data-aos="fade-up" data-aos-delay="300">
 							<div class="box-servicios-icon mb-3">
 								<span class="fa-stack fa-2x">
@@ -181,7 +181,7 @@ $config = getConfig();
 							</div>
 						</div>
 					</div>
-					<div class="col-6 col-md-3">
+					<div class="col-sm-6 col-md-3">
 						<div class="box-servicios text-center" data-aos="fade-up" data-aos-delay="600">
 							<div class="box-servicios-icon mb-3">
 								<span class="fa-stack fa-2x">
@@ -195,7 +195,7 @@ $config = getConfig();
 							</div>
 						</div>
 					</div>
-					<div class="col-6 col-md-3">
+					<div class="col-sm-6 col-md-3">
 						<div class="box-servicios text-center" data-aos="fade-up" data-aos-delay="900">
 							<div class="box-servicios-icon mb-3">
 								<span class="fa-stack fa-2x">
@@ -209,7 +209,7 @@ $config = getConfig();
 							</div>
 						</div>
 					</div>
-					<div class="col-6 col-md-3">
+					<div class="col-sm-6 col-md-3">
 						<div class="box-servicios text-center" data-aos="fade-up" data-aos-delay="1200">
 							<div class="box-servicios-icon mb-3">
 								<span class="fa-stack fa-2x">
@@ -298,7 +298,7 @@ $config = getConfig();
 			
 			<div class="container pt-md-4">
 				<div class="row">
-					<div class="d-none d-lg-block col-lg-3">
+					<div class="col-12 col-lg-3 text-center text-lg-left">
 						<div class="logo-footer">
 							<img src="images/logo.png" alt="<?php echo $config->info->titulo; ?>" width="151" height="70" class="img-fluid">
 						</div>
@@ -310,12 +310,12 @@ $config = getConfig();
 							</ul>
 						</div>
 					</div>
-					<div class="col-6 col-lg-2">
+					<div class="col-12 col-lg-2 text-center text-lg-left mb-3 mb-lg-0">
 						<ul class="navbar-nav w-100">
 							<?php echo createMenu($config->menu, 'li'); ?>
 						</ul>
 					</div>
-					<div class="col-6 col-lg-3">
+					<div class="col-12 col-lg-3 text-center text-lg-left">
 						<div class="box-direccion-footer">
 
 							<?php echo $config->contactos->direccion; ?><br>

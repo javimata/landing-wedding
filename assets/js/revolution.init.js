@@ -73,7 +73,6 @@ jQuery(function($) {
                 45, 46, 47, 48, 49, 50, 51, 55],
             disable_onmobile: 'on'
         },
-        visibilityLevels: [1120, 1024, 778, 480],
         gridwidth: 1120,
         gridheight: 600,
         lazyType: "none",
@@ -94,7 +93,11 @@ jQuery(function($) {
             simplifyAll: "off",
             nextSlideOnWindowFocus: "off",
             disableFocusListener: false,
-        }
+        },
+        visibilityLevels: [1120, 1024, 778, 480],
+        responsiveLevels: [1120, 1024, 778, 480],
+        gridwidth: [1120, 1024, 778, 480],
+        gridheight: [600, 550, 550, 520]
     });
 
 
