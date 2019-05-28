@@ -22,6 +22,19 @@ $config = getConfig();
 		<meta property="og:image" content="<?php echo $config->info->url; ?><?php echo $config->info->logo ?>"/>
 		<?php endif; ?>
 
+		<?php if ( $config->configuracion->pwa == 1 ): ?>
+		<meta name="mobile-web-app-capable" content="yes">
+		<meta name="theme-color" content="#4f3676">
+		<meta name="MobileOptimized" content="width">
+		<meta name="HandheldFriendly" content="true">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+		<link rel="shortcut icon" type="image/png" href="./images/logo/logo_1024.png">
+		<link rel="apple-touch-icon" href="./images/logo/logo_1024.png">
+		<link rel="apple-touch-startup-image" href="./images/logo/logo_1024.png">
+		<link rel="manifest" href="./manifest.json">
+		<?php endif; ?>
+
 		<!-- FAVICONS -->
 		<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
 		<link rel="icon" href="images/favicon.png" type="image/x-icon">
@@ -353,7 +366,7 @@ $config = getConfig();
 		<?php endif; ?>
 
 		<?php if ( $config->configuracion->pwa == 1 ): ?>
-		<script src="sw.js"></script>
+		<script src="script_sw.js"></script>
 		<?php endif; ?>
 
 		<script async src="dist/js/bundle.js"></script>

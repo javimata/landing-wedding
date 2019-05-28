@@ -175,7 +175,7 @@
         "revolution": 1,
         "loading": 0,
         "particlesFooter": 0,
-        "pwa": 0,
+        "pwa": 1,
         "fonts": {},
         "assets": {
             "slick": 1,
