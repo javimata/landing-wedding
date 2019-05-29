@@ -158,141 +158,53 @@ $config = getConfig();
 		</section>
 
 
-		<section id="servicios" class="py-5">
+		<section id="nosotros" class="py-5">
 
-			<header id="header-section" class="text-center mb-4" data-aos="fade-up" data-aos-delay="0">
-				<h2 class="title-section">Servicios</h2>
+			<header class="header-section text-center mb-5">
+				<h2 class="title-section" data-aos="fade-up" data-aos-delay="0">TRAYENDO SUEÑOS A LA VIDA</h2>
+				<img class="img-fluid my-4" src="images/divider.png" data-aos="fade-left" data-aos-delay="300" data-aos-speed="600">
+				<p data-aos="fade-left" data-aos-delay="600">DISEÑADORES DE EVENTOS Y BODAS</p>
 			</header>
 
 			<div class="container">
 				<div class="row">
 					
-					<div class="col-sm-6 col-md-3">
-						<div class="box-servicios text-center" data-aos="fade-up" data-aos-delay="300">
-							<div class="box-servicios-icon mb-3">
-								<span class="fa-stack fa-2x">
-									<i class="fas fa-circle fa-stack-2x"></i>
-									<i class="fas fa-globe fa-stack-1x fa-inverse"></i>
-								</span>
-							</div>
-							<div class="box-servicios-content">
-								<h4 class="mb-2">Desarrollo web</h4>
-								<p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-sm-6 col-md-3">
-						<div class="box-servicios text-center" data-aos="fade-up" data-aos-delay="600">
-							<div class="box-servicios-icon mb-3">
-								<span class="fa-stack fa-2x">
-									<i class="fas fa-circle fa-stack-2x"></i>
-									<i class="fas fa-ad fa-stack-1x fa-inverse"></i>
-								</span>
-							</div>
-							<div class="box-servicios-content">
-								<h4 class="mb-2">Web marketing</h4>
-								<p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-sm-6 col-md-3">
-						<div class="box-servicios text-center" data-aos="fade-up" data-aos-delay="900">
-							<div class="box-servicios-icon mb-3">
-								<span class="fa-stack fa-2x">
-									<i class="fas fa-circle fa-stack-2x"></i>
-									<i class="fas fa-chalkboard-teacher fa-stack-1x fa-inverse"></i>
-								</span>
-							</div>
-							<div class="box-servicios-content">
-								<h4 class="mb-2">Consultoria web</h4>
-								<p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-sm-6 col-md-3">
-						<div class="box-servicios text-center" data-aos="fade-up" data-aos-delay="1200">
-							<div class="box-servicios-icon mb-3">
-								<span class="fa-stack fa-2x">
-									<i class="fas fa-circle fa-stack-2x"></i>
-									<i class="fas fa-mail-bulk fa-stack-1x fa-inverse"></i>
-								</span>
-							</div>
-							<div class="box-servicios-content">
-								<h4 class="mb-2">Social media</h4>
-								<p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
-							</div>
-						</div>
+					<div class="col-12 text-center mb-5">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+
+						<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia.
+						</p>
 					</div>
 
-				</div>
-			</div>
-
-		</section>
-
-
-		<section id="beneficios" class="py-5">
-
-			<div class="container py-lg-5">
-				<div class="row align-items-center">
-					<div class="col-md-5 pb-3 pb-md-0">
-						<img src="images/beneficios.jpg" alt="Beneficios" class="img-fluid" data-aos="fade-left" data-aos-delay="300" width="640" height="418">
-					</div>
-					<div class="col-md-7">
-						<div class="box-content text-white" data-aos="fade-right" data-aos-delay="600">
-							<h2 class="mb-1">Beneficios</h2>
-							<span class="subtitle mb-3 d-block">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</span>
-							<div class="box-content-text"><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio voluptate laudantium, magnam autem ratione id ipsam dolore atque asperiores? Iusto ipsam culpa accusantium quos nostrum eligendi unde cupiditate perspiciatis tempore. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam quibusdam quaerat vero sed pariatur. </p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-
-		</section>
-
-		<section id="clientes" class="py-5">
-
-			<div class="slider-logos py-2">
-
-				<h2 class="mb-4 text-center">Algunos clientes</h2>
-
-				<div class="slide-logos d-flex justify-content-around align-items-center">
-					<?php $files = glob('images/logos/*.{jpg,png,gif}', GLOB_BRACE);
-					foreach($files as $file):
-						list($ancho, $alto) = getimagesize($file);
-					?>
-					<div><img src="<?php echo $file; ?>" class="img-fluid" alt="Logo" width="<?php echo $ancho; ?>" height="<?php echo $alto; ?>" /></div>
-					<?php endforeach; ?>
-				</div>
-
-			</div>
-
-		</section>
-
-		<section id="contacto" class="py-5 text-white">
-			
-			<div class="container pt-md-4">
-				<div class="row">
-					<div class="col">
-
-						<header id="header-section" class="text-center" data-aos="fade-up" data-aos-delay="300">
-							<h4 class="title-section">¿Encontraste la opción que deseas?</h4>
+					<div class="col-12">
+						<header class="header-section text-center mb-5">
+							<h3>CONTACTO</h3>
 						</header>
-
-						<div class="box-form" data-aos="fade-up" data-aos-delay="600">
-							<div class="form-text text-center mb-3">
-								Es posible cotizar según tus necesidades, déjanos tus datos y te contactamos para presentarte una propuesta personalizada.
-							</div>
-
-							<?php createForm( $config->forms->cotiza ); ?>
-
+					</div>
+				</div>
+				<div class="row align-items-center py-4 mb-5 row-contact">
+					<div class="col-sm-4 col-md-5 text-md-right">
+						<div class="text-contact font-weight-bold">
+							<i class="fas fa-phone"></i> +(00) 000 0000
 						</div>
-
+					</div>
+					<div class="col-sm-4 col-md-2 text-center">
+						<div class="or-title">
+							<h4>o</h4>
+						</div>
+					</div>
+					<div class="col-sm-4 col-md-5 text-md-left">
+						<div class="text-contact font-weight-bold">
+							<i class="fas fa-envelope"></i> mail@mail.com
+						</div>
 					</div>
 
 				</div>
 			</div>
+
 		</section>
+
+
 
 		<footer id="footer" class="pt-5 pb-3">
 			

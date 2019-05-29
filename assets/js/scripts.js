@@ -22,43 +22,6 @@
 			once: true
 		});
 
-		if ( $('.slide-logos').length > 0 ) {
-
-			$('.slide-logos').on('init', function (event, slick) {
-				$(this).fadeIn();
-			});
-
-			$('.slide-logos').slick({
-				autoplay: true,
-				slidesToShow: 6,
-				slidesToScroll: 1,
-				infinite: true,
-				adaptiveHeight: false,
-				centerMode: false,
-				centerPadding: '60px',
-				variableWidth: false,
-				responsive: [
-					{
-						breakpoint: 768,
-						settings: {
-							arrows: false,
-							centerMode: false,
-							centerPadding: '40px',
-							slidesToShow: 4
-						}
-					},
-					{
-						breakpoint: 480,
-						settings: {
-							arrows: false,
-							centerMode: false,
-							centerPadding: '40px',
-							slidesToShow: 3
-						}
-					}
-				]
-			});
-		}
 
 		$('ul.menu-movil a').on('click', function(){
 			$(".navbar-toggler").click();

@@ -7,7 +7,7 @@ jQuery(function($) {
 
     $("#banner-main").show().revolution({
         sliderType: "standard",
-        sliderLayout: "fullwidth",
+        sliderLayout: "auto",
         scrollbarDrag: "true",
         dottedOverlay: "none",
         delay: 9000,
@@ -19,7 +19,7 @@ jQuery(function($) {
             onHoverStop: "on",
             arrows: {
                 style: "hesperiden",
-                enable: false,
+                enable: true,
                 hide_onmobile: false,
                 hide_onleave: false,
                 tmp: '',
@@ -37,7 +37,7 @@ jQuery(function($) {
                 }
             },
             bullets: {
-                enable: true,
+                enable: false,
                 style: 'hermes',
                 tmp: '',
                 direction: 'horizontal',
@@ -56,7 +56,6 @@ jQuery(function($) {
                 hide_delay_mobile: 1200
             },
             touch: {
-
                 touchenabled: 'on',
                 swipe_threshold: 75,
                 swipe_min_touches: 1,
@@ -94,10 +93,7 @@ jQuery(function($) {
             nextSlideOnWindowFocus: "off",
             disableFocusListener: false,
         },
-        visibilityLevels: [1120, 1024, 778, 480],
-        responsiveLevels: [1120, 1024, 778, 480],
-        gridwidth: [1120, 1024, 778, 480],
-        gridheight: [600, 550, 550, 520]
+        visibilityLevels: [1120, 1024, 778, 480]
     });
 
 

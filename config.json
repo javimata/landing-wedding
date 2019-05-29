@@ -1,6 +1,6 @@
 {
     "info": {
-        "titulo": "Agencia - Agencia de Web Marketing",
+        "titulo": "Wedding - Creating moments",
         "descripcion": "Agencia de Web Marketing",
         "googleAnalytics": "",
         "fbPixel": "",
@@ -12,8 +12,8 @@
         "email" : "atencion.clientes@eldominio.com",
         "telefono": "(00) 000 0000",
         "direccion": "Direccion conocida<br>Ciudad cercana en algún pais",
-        "whatsapp": "000000000",
-        "messenger": "#"
+        "whatsapp": "",
+        "messenger": ""
     },
     "redes":{
         "facebook": {
@@ -30,8 +30,8 @@
         "id": "menu-main",
         "type": "list",
         "items": {
-            "Servicios": {
-                "url": "#servicios",
+            "Nosotros": {
+                "url": "#nosotros",
                 "class": "nav-item",
                 "target": "",
                 "itemClass": ""
@@ -175,11 +175,11 @@
         "revolution": 1,
         "loading": 0,
         "particlesFooter": 0,
-        "pwa": 1,
+        "pwa": 0,
         "fonts": {},
         "assets": {
-            "slick": 1,
-            "matchHeight": 1,
+            "slick": 0,
+            "matchHeight": 0,
             "aos": 1,
             "animate": 1,
             "fontawesome": 1

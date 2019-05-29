@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css?family=Lato:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap');
 /*---------- PRESETS ----------*/
 @primary:     #4f3676;
 @secondary:   #aea1ea;
-@black:       #000;
+@black:       #5f2039;
 @white:       #fff;
-@gray:        #f3f2f2;
+@gray:        #c0c0c0;
 @dark:		  #464646;
 @orange:      #df9f15;
 
@@ -19,11 +19,15 @@ html {
 body {
 	background: @white;
 	font-family: @font1;
-	font-size: 20px;
+	font-size: 16px;
 	color: @black;
 	position: relative;
-	font-weight: 300;
+	font-weight: 400;
 	overflow-x: hidden;
+	background: url('../../images/body-bg.png');
+	background-repeat: repeat;
+    background-size: inherit;
+    background-attachment: inherit;
 }
 
 .floating {
@@ -76,7 +80,7 @@ body {
 	color: @white;
 	z-index: 2001;
 	transition: all 300ms;
-	position: absolute;
+	position: relative;
 	width: 100%;
 	a {
 		color: @black;
@@ -137,28 +141,12 @@ body {
 }
 
 section#slider {
-	text-shadow: 3px 3px 5px @black;
+	// text-shadow: 3px 3px 5px @black;
+	background: @white;
+	padding: 0 1em 1em 1em;
 }
 
-section#servicios {
-	.box-servicios {
-		cursor: pointer;
-		.box-servicios-icon {
-			.fa-circle {
-				color: @primary;
-				transition: all 300ms;
-			}
-		}
-		&:hover {
-			animation: pulse 600ms;
-			.box-servicios-icon {
-				.fa-circle {
-					color: @secondary;
-				}
-			}
-		}
-	}
-}
+
 
 section#beneficios {
 	background: url('../../images/fondo-beneficios.jpg') no-repeat;
@@ -167,59 +155,61 @@ section#beneficios {
 }
 
 
-header#header-section {
-	.title-section {
-		font-size: 50px;
-	}
-	@media ( min-width: 768px ) and ( max-width: 991px ) {
-		.title-section {
-			font-size: 40px;
-		}
-	}
-	@media ( max-width: 767px ) {
-		.title-section {
-			font-size: 34px;
-		}
-	}
-}
-
-.box-content {
+header.header-section {
 	h2 {
-		font-size: 90px;
+		font-size: 36px;
+		font-weight: 700;
 	}
-	span.subtitle{
-		font-size: 20px;
+	h3 {
+		font-size: 24px;
+		font-weight: 700;
 	}
-	.box-content-text {
-		font-size: 16px;
-	}
+	font-size: 14px;
+	font-weight: 400;
 	@media ( min-width: 768px ) and ( max-width: 991px ) {
-		h2 {
-			font-size: 60px;
+		.title-section {
+			font-size: 36px;
 		}
 	}
 	@media ( max-width: 767px ) {
-		h2 {
-			font-size: 45px;
+		.title-section {
+			font-size: 30px;
 		}
 	}
 }
 
-.list-check {
-	li {
-		padding-bottom: 10px;
+.row-contact {
+	letter-spacing: 2px;
+	.or-title {
+		position: relative;
+		color: @gray;
+		&:before,
+		&:after {
+			content: "";
+			position: absolute;
+			width: 2px;
+			height: 35px;
+			background-color: @gray;
+			opacity: 0.6;
+		}
+		&:before {
+			top: -50px;
+			right: 50%;
+			-webkit-transform: translateX(50%);
+			transform: translateX(50%);
+		}
+		&:after {
+			bottom: -50px;
+			left: 50%;
+			-webkit-transform: translateX(-50%);
+			transform: translateX(-50%);
+		}
 	}
 }
 
-section#contacto {
-	background: url('../../images/fondo-beneficios.jpg') no-repeat;
-	background-size: cover;
-	background-position: center;
-	background-color: @black;
-} 
 
 footer#footer {
-	background: @primary;
+	background: @black;
 	color: @white;
 	font-size: 18px;
 	position: relative;
@@ -267,22 +257,6 @@ section#copyright {
 		color: @white;
 	}	
 }
-
-.slide-logos {
-	display: none;
-	.slick-track {
-		display: flex;
-		align-items: center;
-	}
-	.slick-slide {
-		padding: 0 .5em;
-		text-align: center;
-		img {
-			display: inline-block;
-		}
-	}
-}
-
 
 
 
@@ -367,15 +341,23 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .btn.btn-primary {
-	background: @primary;
-	color: @white;
-	border: 0;
+	background: @white;
+	color: @black;
+	border: 1px solid @white;
 	padding: 12px 30px;
-	border-radius: 5px;
+	border-radius: 0;
 	transition: all 300ms;
 	&:hover {
-		background: @secondary;
+		background: transparent;
 		color: @white;
+	}
+	&.btn-bordered {
+		background: transparent;
+		color: @white;
+		&:hover {
+			background: @white;
+			color: @black;
+		}
 	}
 }
 
