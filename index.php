@@ -169,7 +169,7 @@ $config = getConfig();
 			<div class="container">
 				<div class="row">
 					
-					<div class="col-12 text-center mb-5">
+					<div class="col-12 text-center mb-5" data-aos="fade-up" data-aos-delay="300">
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
 
 						<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia.
@@ -177,24 +177,24 @@ $config = getConfig();
 					</div>
 
 					<div class="col-12">
-						<header class="header-section text-center mb-2 mb-md-5">
+						<header class="header-section text-center mb-2 mb-md-5" data-aos="fade-down" data-aos-delay="0">
 							<h3>CONTACTO</h3>
 						</header>
 					</div>
 				</div>
 				<div class="row align-items-center py-3 py-lg-4 mb-2 mb-lg-5 row-contact">
 					<div class="col-sm-6 col-md-5 text-center text-md-right">
-						<div class="text-contact font-weight-bold py-2 py-sm-0 align-items-center">
+						<div class="text-contact font-weight-bold py-2 py-sm-0 align-items-center" data-aos="fade-left" data-aos-delay="0">
 							<i class="fas fa-phone fa-lg"></i> +(00) 000 0000
 						</div>
 					</div>
-					<div class="col-sm-4 col-md-2 text-center d-none d-md-block align-items-center">
+					<div class="col-sm-4 col-md-2 text-center d-none d-md-block align-items-center" data-aos="fade-down" data-aos-delay="300">
 						<div class="or-title d-none d-md-block">
 							<h4>o</h4>
 						</div>
 					</div>
 					<div class="col-sm-6 col-md-5 text-center text-md-left">
-						<div class="text-contact font-weight-bold py-2 py-sm-0 align-items-center">
+						<div class="text-contact font-weight-bold py-2 py-sm-0 align-items-center" data-aos="fade-right" data-aos-delay="600">
 							<i class="far fa-envelope fa-lg"></i> mail@mail.com
 						</div>
 					</div>
@@ -209,7 +209,7 @@ $config = getConfig();
 			<div class="container">
 				<div class="row">
 					<div class="col-md-4">
-						<div class="box-servicio">
+						<div class="box-servicio" data-aos="fade-left" data-aos-delay="0">
 							<div class="box-servicio-img">
 								<img src="images/thumb-1.png" alt="Dress & Makeup" class="img-fluid">
 							</div>
@@ -225,7 +225,7 @@ $config = getConfig();
 						</div>
 					</div>
 					<div class="col-md-4">
-						<div class="box-servicio">
+						<div class="box-servicio" data-aos="fade-up" data-aos-delay="300">
 							<div class="box-servicio-img">
 								<img src="images/thumb-2.png" alt="Dress & Makeup" class="img-fluid">
 							</div>
@@ -242,7 +242,7 @@ $config = getConfig();
 		
 					</div>
 					<div class="col-md-4">
-						<div class="box-servicio">
+						<div class="box-servicio" data-aos="fade-right" data-aos-delay="600">
 							<div class="box-servicio-img">
 								<img src="images/thumb-3.png" alt="Dress & Makeup" class="img-fluid">
 							</div>
@@ -269,10 +269,10 @@ $config = getConfig();
 			<div class="beneficios-inner">
 				<div class="section-overlay"></div>
 				<div class="beneficios-inner-content">
-					<img src="images/map-icon.png" alt="Icono map" class="img-fluid">
-					<h1 class="py-3">TU MOMENTO ESPECIAL</h1>
-					<h4>ELIGE EL MEJOR AMBIENTE PARA TU BODA</h4>
-					<a href="#" class="btn btn-primary btn-bordered mt-lg-5 mt-4">ESCOGE TU LUGAR</a>
+					<img src="images/map-icon.png" alt="Icono map" class="img-fluid" data-aos="fade-up" data-aos-delay="0">
+					<h1 class="py-3" data-aos="fade-up" data-aos-delay="300">TU MOMENTO ESPECIAL</h1>
+					<h4 data-aos="fade-up" data-aos-delay="600">ELIGE EL MEJOR AMBIENTE PARA TU BODA</h4>
+					<a href="#" class="btn btn-primary btn-bordered mt-lg-5 mt-4" data-aos="fade-up" data-aos-delay="900">ESCOGE TU LUGAR</a>
 				</div>
 			</div>
 
@@ -312,15 +312,15 @@ $config = getConfig();
 					<div class="col-md-8">
 						<div class="box-testimonios row align-items-end bg-white pt-5 pl-3">
 							<div class="col-md-5">
-								<img src="images/newsletter-img.png" alt="Testimonio" class="img-fluid">
+								<img src="images/newsletter-img.png" alt="Testimonio" class="img-fluid" data-aos="fade-up" data-aos-delay="0">
 							</div>
 							<div class="col-md-7">
-								<i class="far fa-heart fa-3x mb-2"></i>
-								<h5 class="title-testimonio mb-4">
+								<i class="far fa-heart fa-3x mb-2" data-aos="fade-right" data-aos-delay="300"></i>
+								<h5 class="title-testimonio mb-4" data-aos="fade-right" data-aos-delay="600">
 									¿QUE OPINAN LOS NOVIOS?
 								</h5>
 
-								<div class="slide-testimonios mb-5">
+								<div class="slide-testimonios mb-5" data-aos="fade-right" data-aos-delay="900">
 									<div class="slide-testimonios-item">
 										<div class="slide-testimonios-content d-block mb-4">
 											"Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam quae sequi inventore ab"
@@ -344,7 +344,7 @@ $config = getConfig();
 						</div>
 					</div>
 					<div class="col-md-4">
-						<div class="box-newsletter bg-white px-5 pt-5 pb-4">
+						<div class="box-newsletter bg-white px-5 pt-5 pb-4" data-aos="fade-up" data-aos-delay="300">
 							<header class="header-newsletter">
 								<i class="far fa-envelope fa-3x mb-2"></i>
 								<h3 class="mb-4">Newsletter</h3>
