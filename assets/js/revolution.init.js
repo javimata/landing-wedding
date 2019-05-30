@@ -37,7 +37,7 @@ jQuery(function($) {
                 }
             },
             bullets: {
-                enable: false,
+                enable: true,
                 style: 'hermes',
                 tmp: '',
                 direction: 'horizontal',
