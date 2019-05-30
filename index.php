@@ -115,12 +115,12 @@ $config = getConfig();
 			<div class="container">
 				<div class="row align-items-center py-1">
 
-					<div class="col-5 col-lg-4">
+					<div class="col-7 col-lg-4">
 						<a class="navbar-brand p-1" href="#" data-aos="fade-left" data-aos-delay="0">
 							<img src="<?php echo $config->info->logo; ?>" alt="<?php echo $config->info->titulo; ?>" class="img-fluid" width="151" height="70" />
 						</a>
 					</div>
-					<div class="col-7 col-lg-8">
+					<div class="col-5 col-lg-8">
 						<nav class="navbar navbar-expand-lg float-right float-lg-none p-0" data-aos="fade-right" data-aos-delay="300">
 							<button class="navbar-toggler p-0" type="button" data-toggle="collapse" data-target="#navbarMain2" aria-controls="navbarMain2" aria-expanded="false" aria-label="Toggle navigation">
 								<span class="navbar-toggler-icon d-inline"><i class="fas fa-bars fa-lg"></i></span>
@@ -185,7 +185,7 @@ $config = getConfig();
 				<div class="row align-items-center py-3 py-lg-4 mb-2 mb-lg-5 row-contact">
 					<div class="col-sm-6 col-md-5 text-center text-md-right">
 						<div class="text-contact font-weight-bold py-2 py-sm-0 align-items-center" data-aos="fade-left" data-aos-delay="0">
-							<i class="fas fa-phone fa-lg"></i> +(00) 000 0000
+							<i class="fas fa-phone fa-lg"></i> <a href="tel:<?php echo cleanString($config->contactos->telefono); ?>"><?php echo $config->contactos->telefono; ?></a>
 						</div>
 					</div>
 					<div class="col-sm-4 col-md-2 text-center d-none d-md-block align-items-center" data-aos="fade-down" data-aos-delay="300">
@@ -195,7 +195,7 @@ $config = getConfig();
 					</div>
 					<div class="col-sm-6 col-md-5 text-center text-md-left">
 						<div class="text-contact font-weight-bold py-2 py-sm-0 align-items-center" data-aos="fade-right" data-aos-delay="600">
-							<i class="far fa-envelope fa-lg"></i> mail@mail.com
+							<i class="far fa-envelope fa-lg"></i> <a href="mailto:<?php echo cleanString($config->contactos->email); ?>"><?php echo $config->contactos->email; ?></a>
 						</div>
 					</div>
 

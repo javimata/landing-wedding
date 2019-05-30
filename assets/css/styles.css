@@ -179,6 +179,9 @@ header.header-section h3 {
   letter-spacing: 2px;
   color: #5f2039;
 }
+.row-contact a {
+  color: #5f2039;
+}
 .row-contact .or-title {
   position: relative;
   color: #c0c0c0;
