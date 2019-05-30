@@ -292,6 +292,13 @@ $config = getConfig();
 				</div>
 				<div class="row">
 					<div class="col-12 p-0">
+						<div class="load-grid">
+							<div class="d-flex justify-content-center align-items-center py-5">
+								<div class="spinner-border" role="status">
+									<span class="sr-only">Loading...</span>
+								</div>
+							</div>
+						</div>
 						<div class="grid">
 							<?php 
 							$files = glob('images/porfolio/*.{jpg,png,gif}', GLOB_BRACE);

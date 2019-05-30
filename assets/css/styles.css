@@ -319,10 +319,21 @@ section#porfolio .container header.header-section {
 }
 .grid {
   margin: 0 auto;
+  display: none;
 }
 .grid .grid-item {
   width: 32%;
   margin-bottom: 1rem;
+}
+.grid .grid-item img {
+  -webkit-transition: all 1000ms;
+  transition: all 1000ms;
+  -webkit-filter: brightness(50%);
+          filter: brightness(50%);
+}
+.grid .grid-item:hover img {
+  -webkit-filter: brightness(100%);
+          filter: brightness(100%);
 }
 section#contacto .box-testimonios i {
   color: #f73a46;

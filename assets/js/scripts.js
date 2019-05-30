@@ -22,10 +22,25 @@
 			once: true
 		});
 
-		$('.grid').masonry({
+		var $grid = $('.grid').masonry({
 			itemSelector: '.grid-item',
 			fitWidth: true,
 			gutter: 0
+		});
+
+		$grid.on('layoutComplete', showMasonry() );
+
+		function showMasonry() {
+			$('.load-grid').delay(1000).fadeOut(0, function(){
+				// $('.grid').css('opacity', 1);
+				// $('.grid').css('display', 'block');
+				$('.grid').fadeIn(1000);
+				$grid.masonry();
+			});
+		}
+		
+		$(window).on("resize", function(){
+			$grid.masonry();
 		});
 
 		$('.slide-testimonios').slick({
