@@ -1,12 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap');
 /*---------- PRESETS ----------*/
 @primary:     #4f3676;
-@secondary:   #aea1ea;
+@secondary:   #f73a46;
 @black:       #171717;
 @white:       #fff;
 @gray:        #c0c0c0;
 @dark:		  #5f2039;
 @orange:      #df9f15;
+@graytext:    #9c9c9c;
 
 @font1:       'Lato', serif;
 
@@ -166,7 +167,7 @@ header.header-section {
 	}
 	@media ( max-width: 767px ) {
 		.title-section {
-			font-size: 30px;
+			font-size: 24px;
 		}
 	}
 }
@@ -198,6 +199,106 @@ header.header-section {
 			left: 50%;
 			-webkit-transform: translateX(-50%);
 			transform: translateX(-50%);
+		}
+	}
+}
+
+.box-servicio {
+	background: @white;
+	padding: 1em;
+	text-align: center;
+	margin-bottom: 2em;
+	position: relative;
+	.box-servicio-img {
+		filter: brightness(100%);
+		z-index: 1;
+		position: relative;
+		transition: all 300ms;
+	}
+	.box-servicio-icon {
+		margin: -50px 0px -10px 0px;
+		z-index: 2;
+		position: relative;
+		.box-servicio-icon-inner {
+			margin: 0px 0px 0px 0px;
+			height: 100px;
+			width: 100px;
+			color: @secondary;
+			background-color: @white;
+			border-radius: 100px;
+			display: inline-block;
+			text-align: center;
+			-webkit-transition: all .4s;
+			transition: all .4s;
+			z-index: 2;
+			i {
+				line-height: 100px;
+				font-size: 48px;
+			}
+		}
+	}
+	.box-servicio-content {
+		color: @graytext;
+		font-size: 16px;
+		h2 {
+			font-size: 24px;
+			font-weight: 700;
+			color: @dark;
+		}
+	}
+	&:hover {
+		.box-servicio-img {
+			filter: brightness(50%);
+		}
+		.box-servicio-icon {
+			.box-servicio-icon-inner {
+				background: darken(@white, 2%);
+			}
+		}
+	}
+}
+
+section#beneficios {
+	padding: 1em;
+	background: @white;
+	.beneficios-inner {
+		background: url('../../images/moment-bg.png') no-repeat;
+		background-size: cover;
+		background-position: center;
+		background-attachment: fixed;
+		padding: 180px 0;
+		position: relative;
+		color: @white;
+		.beneficios-inner-content {
+			text-align: center;
+			position: relative;
+			z-index: 2;
+			h1 {
+				font-size: 72px;
+				font-weight: 900;
+			}
+			h4 {
+				font-size: 30px;
+				font-weight: 300;
+				letter-spacing: 2px;
+			}
+			@media ( max-width: 768px ) {
+				h1 {
+					font-size: 30px;
+				}
+				h4 {
+					font-size: 16px;
+				}
+			}
+		}
+		.section-overlay {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			background: rgba(0,0,0,.7);
+			top: 0;
+			left: 0;
+			z-index: 0;
 		}
 	}
 }
@@ -353,6 +454,10 @@ h1,h2,h3,h4,h5,h6 {
 			background: @white;
 			color: @black;
 		}
+	}
+	@media ( max-width: 768px ) {
+		padding: 6px 15px;
+		font-size: 14px;
 	}
 }
 

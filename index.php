@@ -160,7 +160,7 @@ $config = getConfig();
 
 		<section id="nosotros" class="py-5">
 
-			<header class="header-section text-center mb-5">
+			<header class="header-section text-center mb-4 mb-lg-5">
 				<h2 class="title-section" data-aos="fade-up" data-aos-delay="0">TRAYENDO SUEÑOS A LA VIDA</h2>
 				<img class="img-fluid my-4" src="images/divider.png" data-aos="fade-left" data-aos-delay="300" data-aos-speed="600">
 				<p data-aos="fade-left" data-aos-delay="600">DISEÑADORES DE EVENTOS Y BODAS</p>
@@ -177,25 +177,25 @@ $config = getConfig();
 					</div>
 
 					<div class="col-12">
-						<header class="header-section text-center mb-5">
+						<header class="header-section text-center mb-2 mb-md-5">
 							<h3>CONTACTO</h3>
 						</header>
 					</div>
 				</div>
-				<div class="row align-items-center py-4 mb-5 row-contact">
-					<div class="col-sm-4 col-md-5 text-md-right">
-						<div class="text-contact font-weight-bold">
-							<i class="fas fa-phone"></i> +(00) 000 0000
+				<div class="row align-items-center py-3 py-lg-4 mb-2 mb-lg-5 row-contact">
+					<div class="col-sm-6 col-md-5 text-center text-md-right">
+						<div class="text-contact font-weight-bold py-2 py-sm-0 align-items-center">
+							<i class="fas fa-phone fa-lg"></i> +(00) 000 0000
 						</div>
 					</div>
-					<div class="col-sm-4 col-md-2 text-center">
-						<div class="or-title">
+					<div class="col-sm-4 col-md-2 text-center d-none d-md-block align-items-center">
+						<div class="or-title d-none d-md-block">
 							<h4>o</h4>
 						</div>
 					</div>
-					<div class="col-sm-4 col-md-5 text-md-left">
-						<div class="text-contact font-weight-bold">
-							<i class="fas fa-envelope"></i> mail@mail.com
+					<div class="col-sm-6 col-md-5 text-center text-md-left">
+						<div class="text-contact font-weight-bold py-2 py-sm-0 align-items-center">
+							<i class="far fa-envelope fa-lg"></i> mail@mail.com
 						</div>
 					</div>
 
@@ -204,7 +204,79 @@ $config = getConfig();
 
 		</section>
 
+		<section id="servicios" class="mb-md-5">
 
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4">
+						<div class="box-servicio">
+							<div class="box-servicio-img">
+								<img src="images/thumb-1.png" alt="Dress & Makeup" class="img-fluid">
+							</div>
+							<div class="box-servicio-icon text-center">
+								<div class="box-servicio-icon-inner">
+									<i class="fas fa-female"></i>
+								</div>
+							</div>
+							<div class="box-servicio-content py-2 mb-2">
+								<h2>Dress & Makeup</h2>
+								Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="box-servicio">
+							<div class="box-servicio-img">
+								<img src="images/thumb-2.png" alt="Dress & Makeup" class="img-fluid">
+							</div>
+							<div class="box-servicio-icon text-center">
+								<div class="box-servicio-icon-inner">
+									<i class="fas fa-birthday-cake"></i>
+								</div>
+							</div>
+							<div class="box-servicio-content py-2 mb-2">
+								<h2>Catering & Staffing</h2>
+								Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+							</div>
+						</div>
+		
+					</div>
+					<div class="col-md-4">
+						<div class="box-servicio">
+							<div class="box-servicio-img">
+								<img src="images/thumb-3.png" alt="Dress & Makeup" class="img-fluid">
+							</div>
+							<div class="box-servicio-icon text-center">
+								<div class="box-servicio-icon-inner">
+									<i class="fas fa-camera-retro"></i>
+								</div>
+							</div>
+							<div class="box-servicio-content py-2 mb-2">
+								<h2>Wedding Photography</h2>
+								Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+							</div>
+						</div>
+		
+					</div>
+				</div>
+			</div>
+
+
+		</section>
+
+		<section id="beneficios">
+
+			<div class="beneficios-inner">
+				<div class="section-overlay"></div>
+				<div class="beneficios-inner-content">
+					<img src="images/map-icon.png" alt="Icono map" class="img-fluid">
+					<h1 class="py-3">TU MOMENTO ESPECIAL</h1>
+					<h4>ELIGE EL MEJOR AMBIENTE PARA TU BODA</h4>
+					<a href="#" class="btn btn-primary btn-bordered mt-lg-5 mt-4">ESCOGE TU LUGAR</a>
+				</div>
+			</div>
+
+		</section>
 
 		<footer id="footer" class="pt-5 pb-3">
 			

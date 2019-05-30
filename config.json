@@ -36,14 +36,14 @@
                 "target": "",
                 "itemClass": ""
             },
-            "Beneficios": {
-                "url": "#beneficios",
+            "Servicios": {
+                "url": "#servicios",
                 "class": "nav-item",
                 "target": "",
                 "itemClass": ""
             },
-            "Clientes": {
-                "url": "#clientes",
+            "Beneficios": {
+                "url": "#beneficios",
                 "class": "nav-item",
                 "target": "",
                 "itemClass": ""
