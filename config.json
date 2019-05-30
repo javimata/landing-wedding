@@ -48,6 +48,12 @@
                 "target": "",
                 "itemClass": ""
             },
+            "Portafolio": {
+                "url": "#porfolio",
+                "class": "nav-item",
+                "target": "",
+                "itemClass": ""
+            },
             "Contacto": {
                 "url": "#contacto",
                 "class": "nav-item",
@@ -178,11 +184,12 @@
         "pwa": 0,
         "fonts": {},
         "assets": {
-            "slick": 0,
+            "slick": 1,
             "matchHeight": 0,
             "aos": 1,
             "animate": 1,
-            "fontawesome": 1
+            "fontawesome": 1,
+            "masonry": 1
         },
         "mailer": {
             "auth": 0,

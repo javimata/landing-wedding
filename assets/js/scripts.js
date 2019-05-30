@@ -22,6 +22,18 @@
 			once: true
 		});
 
+		$('.grid').masonry({
+			itemSelector: '.grid-item',
+			fitWidth: true,
+			gutter: 0
+		});
+
+		$('.slide-testimonios').slick({
+			autoplay: true,
+			slidesToShow: 1,
+			slidesToScroll: 1,
+			infinite: true
+		});
 
 		$('ul.menu-movil a').on('click', function(){
 			$(".navbar-toggler").click();

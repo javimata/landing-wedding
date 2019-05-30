@@ -278,6 +278,86 @@ $config = getConfig();
 
 		</section>
 
+		<section id="porfolio" class="mb-5">
+
+			<div class="container">
+				<div class="row">
+					<div class="col-12 p-0">						
+						<header class="header-section text-center mb-0">
+							<h2 class="title-section" data-aos="fade-up" data-aos-delay="0">WEDDING MEMORIES</h2>
+							<img class="img-fluid my-4" src="images/divider.png" data-aos="fade-left" data-aos-delay="300" data-aos-speed="600">
+							<p data-aos="fade-left" data-aos-delay="600">CONOCE NUESTRO PORTAFOLIO</p>
+						</header>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12 p-0">
+						<div class="grid">
+							<?php 
+							$files = glob('images/porfolio/*.{jpg,png,gif}', GLOB_BRACE);
+							foreach($files as $key => $file): ?>
+							<div class="grid-item"><img src="<?php echo $file; ?>" class="img-fluid" alt="Porfolio <?php echo $key; ?>" /></div>
+							<?php endforeach; ?>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</section>
+
+		<section id="contacto" class="mb-5">
+
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8">
+						<div class="box-testimonios row align-items-end bg-white pt-5 pl-3">
+							<div class="col-md-5">
+								<img src="images/newsletter-img.png" alt="Testimonio" class="img-fluid">
+							</div>
+							<div class="col-md-7">
+								<i class="far fa-heart fa-3x mb-2"></i>
+								<h5 class="title-testimonio mb-4">
+									¿QUE OPINAN LOS NOVIOS?
+								</h5>
+
+								<div class="slide-testimonios mb-5">
+									<div class="slide-testimonios-item">
+										<div class="slide-testimonios-content d-block mb-4">
+											"Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam quae sequi inventore ab"
+										</div>
+										<div class="slide-testimonios-author">
+											ROBERT & ANNA
+										</div>
+									</div>
+									<div class="slide-testimonios-item">
+										<div class="slide-testimonios-content d-block mb-4">
+											"Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam quae sequi inventore ab"
+										</div>
+										<div class="slide-testimonios-author">
+											ROBERT & ANNA
+										</div>
+									</div>
+								</div>
+
+							</div>
+
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="box-newsletter bg-white px-5 pt-5 pb-4">
+							<header class="header-newsletter">
+								<i class="far fa-envelope fa-3x mb-2"></i>
+								<h3 class="mb-4">Newsletter</h3>
+								Registrate para recibir nuestras promociones antes que nadie.
+							</header>
+							<?php echo createForm( $config->forms->newsletter ); ?>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</section>
+
 		<footer id="footer" class="pt-5 pb-3">
 			
 			<div class="container pt-md-4">

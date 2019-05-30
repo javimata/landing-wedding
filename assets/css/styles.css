@@ -287,6 +287,46 @@ section#beneficios .beneficios-inner .section-overlay {
   left: 0;
   z-index: 0;
 }
+section#porfolio {
+  position: relative;
+  z-index: 9;
+}
+section#porfolio .container {
+  background: #fff;
+}
+section#porfolio .container header.header-section {
+  background: #fff;
+  margin-top: -130px;
+  padding: 3em 0;
+}
+.grid {
+  margin: 0 auto;
+}
+.grid .grid-item {
+  width: 32%;
+  margin-bottom: 1rem;
+}
+section#contacto .box-testimonios i {
+  color: #f73a46;
+}
+section#contacto .box-testimonios .title-testimonio {
+  font-size: 14px;
+  font-weight: 400;
+  color: #5f2039;
+}
+section#contacto .box-testimonios .slide-testimonios-content {
+  font-size: 22px;
+  font-style: italic;
+  color: #5e5e5e;
+}
+section#contacto .box-newsletter header i {
+  color: #f73a46;
+}
+section#contacto .box-newsletter header h3 {
+  font-size: 30px;
+  font-weight: 900;
+  color: #5f2039;
+}
 footer#footer {
   background: #171717;
   color: #fff;
@@ -381,6 +421,9 @@ section#copyright a {
 }
 canvas {
   display: block;
+}
+.bg-white {
+  background: #fff;
 }
 .bg-gray {
   background: #c0c0c0;

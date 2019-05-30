@@ -55,6 +55,9 @@ if ( config.configuracion.assets.matchHeight == 1 ) {
 if ( config.configuracion.particlesFooter == 1 ) {
     assetsAPPJS.push(nodepath + 'particles.js/particles.js');
 }
+if (config.configuracion.assets.masonry == 1) {
+    assetsAPPJS.push(nodepath + 'masonry-layout/dist/masonry.pkgd.min.js');
+}
 
 /**
  * Genera el archivo principal de styles a partir de Less

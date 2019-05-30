@@ -8,6 +8,7 @@
 @dark:		  #5f2039;
 @orange:      #df9f15;
 @graytext:    #9c9c9c;
+@darktext:    #5e5e5e;
 
 @font1:       'Lato', serif;
 
@@ -304,6 +305,56 @@ section#beneficios {
 }
 
 
+section#porfolio {
+	position: relative;
+	z-index: 9;
+	.container{
+		background: @white;		
+		header.header-section {
+			background: @white;
+			margin-top: -130px;
+			padding: 3em 0;
+		}
+	}
+}
+
+.grid {
+	margin: 0 auto;
+	// display: none;
+	.grid-item { width: 32%; margin-bottom: 1rem; }
+}
+
+section#contacto {
+	.box-testimonios {
+		i {
+			color: @secondary;
+		}
+		.title-testimonio {
+			font-size: 14px;
+			font-weight: 400;
+			color: @dark;
+		}
+		.slide-testimonios-content {
+			font-size: 22px;
+			font-style: italic;
+			color: @darktext;
+		}
+	}
+	.box-newsletter {
+		header {
+			i {
+				color: @secondary;
+			}
+			h3 {
+				font-size: 30px;
+				font-weight: 900;
+				color: @dark;
+			}
+		}
+	}
+}
+
+
 footer#footer {
 	background: @black;
 	color: @white;
@@ -392,6 +443,9 @@ canvas{
 	display: block; 
 }
 
+.bg-white {
+	background: @white;
+}
 .bg-gray {
 	background: @gray;
 }
