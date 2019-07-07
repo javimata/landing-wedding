@@ -1,12 +1,12 @@
-const gulp         = require('gulp');
-const path         = require('path');
-const less         = require('gulp-less');
+const gulp = require('gulp');
+const path = require('path');
+const less = require('gulp-less');
 const autoprefixer = require('gulp-autoprefixer');
-const clean        = require('gulp-clean-css');
-const uglify       = require('gulp-uglify');
-const concat       = require('gulp-concat');
-const nodepath     = 'node_modules/';
-const fs           = require('fs');
+const clean = require('gulp-clean-css');
+const uglify = require('gulp-uglify-es').default;
+const concat = require('gulp-concat');
+const nodepath = 'node_modules/';
+const fs = require('fs');
 
 var config = JSON.parse(fs.readFileSync('./config.json')),
     assetsAPPCSS = new Array(),
@@ -15,7 +15,7 @@ var config = JSON.parse(fs.readFileSync('./config.json')),
 assetsAPPCSS.push(nodepath + 'bootstrap/dist/css/bootstrap.min.css');
 assetsAPPJS.push(nodepath + 'bootstrap/dist/js/bootstrap.bundle.min.js');
 
-if ( config.configuracion.assets.fontawesome == 1 ) {
+if (config.configuracion.assets.fontawesome == 1) {
     assetsAPPCSS.push(nodepath + '@fortawesome/fontawesome-free/css/all.css');
 }
 if (config.configuracion.revolution == 1) {
@@ -44,21 +44,18 @@ if (config.configuracion.assets.animate == 1) {
     assetsAPPCSS.push(nodepath + 'animate.css/animate.min.css');
 }
 
-if ( config.configuracion.assets.slick == 1 ) {
+if (config.configuracion.assets.slick == 1) {
     assetsAPPCSS.push(nodepath + 'slick-carousel/slick/slick.css',
         nodepath + 'slick-carousel/slick/slick-theme.css');
     assetsAPPJS.push(nodepath + 'slick-carousel/slick/slick.min.js');
 }
-if ( config.configuracion.assets.matchHeight == 1 ) {
+if (config.configuracion.assets.matchHeight == 1) {
     assetsAPPJS.push(nodepath + 'jquery-match-height/dist/jquery.matchHeight-min.js');
 }
-if ( config.configuracion.particlesFooter == 1 ) {
-    assetsAPPJS.push(nodepath + 'particles.js/particles.js');
-}
+
 if (config.configuracion.assets.masonry == 1) {
     assetsAPPJS.push(nodepath + 'masonry-layout/dist/masonry.pkgd.min.js');
 }
-
 /**
  * Genera el archivo principal de styles a partir de Less
  * File assets/less/*.less
@@ -106,7 +103,7 @@ gulp.task('compile-css', function (done) {
  */
 gulp.task('compile-js', function (done) {
     gulp.src([
-        nodepath + 'jquery/dist/jquery.min.js' 
+        nodepath + 'jquery/dist/jquery.min.js'
     ])
         .pipe(concat('main.js'))
         .pipe(uglify())
@@ -130,12 +127,12 @@ gulp.task('compile-js', function (done) {
 
 // Fonts
 gulp.task('fonts', function (done) {
-    if ( config.configuracion.assets.fontawesome == 1 ) {
+    if (config.configuracion.assets.fontawesome == 1) {
         gulp.src([
             nodepath + '/@fortawesome/fontawesome-free/webfonts/**'])
             .pipe(gulp.dest('dist/webfonts/'));
     }
-    if ( config.configuracion.assets.slick == 1 ) {
+    if (config.configuracion.assets.slick == 1) {
         gulp.src([
             nodepath + 'slick-carousel/slick/fonts/**'])
             .pipe(gulp.dest('dist/css/fonts/'));
@@ -149,7 +146,7 @@ gulp.task('fonts', function (done) {
 /**
  * Watchs para archivos principales, no se checan dependencias
  */
-gulp.task('watch', function(done){
+gulp.task('watch', function (done) {
     gulp.watch('./assets/less/**.less', gulp.series('styles'));
     gulp.watch('./assets/js/**.js', gulp.series('scripts'));
     done();
