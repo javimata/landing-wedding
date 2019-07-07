@@ -303,7 +303,9 @@ $config = getConfig();
 							<?php 
 							$files = glob('images/porfolio/*.{jpg,png,gif}', GLOB_BRACE);
 							foreach($files as $key => $file): ?>
-							<div class="grid-item"><img src="<?php echo $file; ?>" class="img-fluid" alt="Porfolio <?php echo $key; ?>" /></div>
+							<div class="grid-item">
+								<img src="<?php echo $file; ?>" class="img-fluid" alt="Porfolio <?php echo $key; ?>" />
+							</div>
 							<?php endforeach; ?>
 						</div>
 					</div>
@@ -317,41 +319,43 @@ $config = getConfig();
 			<div class="container">
 				<div class="row">
 					<div class="col-md-8">
-						<div class="box-testimonios row align-items-end bg-white pt-5 pl-3">
-							<div class="col-md-5">
-								<img src="images/newsletter-img.png" alt="Testimonio" class="img-fluid" data-aos="fade-up" data-aos-delay="0">
-							</div>
-							<div class="col-md-7">
-								<i class="far fa-heart fa-3x mb-2" data-aos="fade-right" data-aos-delay="300"></i>
-								<h5 class="title-testimonio mb-4" data-aos="fade-right" data-aos-delay="600">
-									¿QUE OPINAN LOS NOVIOS?
-								</h5>
-
-								<div class="slide-testimonios mb-5" data-aos="fade-right" data-aos-delay="900">
-									<div class="slide-testimonios-item">
-										<div class="slide-testimonios-content d-block mb-4">
-											"Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam quae sequi inventore ab"
-										</div>
-										<div class="slide-testimonios-author">
-											ROBERT & ANNA
-										</div>
-									</div>
-									<div class="slide-testimonios-item">
-										<div class="slide-testimonios-content d-block mb-4">
-											"Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam quae sequi inventore ab"
-										</div>
-										<div class="slide-testimonios-author">
-											ROBERT & ANNA
-										</div>
-									</div>
+						<div class="box-testimonios align-items-end bg-white pt-5 pl-3 mb-3">
+							<div class="row">
+								<div class="col-md-5 pb-lg-0 pb-3">
+									<img src="images/newsletter-img.png" alt="Testimonio" class="img-fluid" data-aos="fade-up" data-aos-delay="0">
 								</div>
+								<div class="col-md-7">
+									<i class="far fa-heart fa-3x mb-2" data-aos="fade-right" data-aos-delay="300"></i>
+									<h5 class="title-testimonio mb-4" data-aos="fade-right" data-aos-delay="600">
+										¿QUE OPINAN LOS NOVIOS?
+									</h5>
 
+									<div class="slide-testimonios mb-5" data-aos="fade-right" data-aos-delay="900">
+										<div class="slide-testimonios-item">
+											<div class="slide-testimonios-content d-block mb-4">
+												"Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam quae sequi inventore ab"
+											</div>
+											<div class="slide-testimonios-author">
+												ROBERT & ANNA
+											</div>
+										</div>
+										<div class="slide-testimonios-item">
+											<div class="slide-testimonios-content d-block mb-4">
+												"Lipsum dolor sit amet consectetur adipisicing elit. Ipsam quae sequi inventore ab"
+											</div>
+											<div class="slide-testimonios-author">
+												JOHN DOE & LISA
+											</div>
+										</div>
+									</div>
+
+								</div>
 							</div>
 
 						</div>
 					</div>
 					<div class="col-md-4">
-						<div class="box-newsletter bg-white px-5 pt-5 pb-4" data-aos="fade-up" data-aos-delay="300">
+						<div class="box-newsletter bg-white px-5 pt-5 pb-4 mb-3" data-aos="fade-up" data-aos-delay="300">
 							<header class="header-newsletter">
 								<i class="far fa-envelope fa-3x mb-2"></i>
 								<h3 class="mb-4">Newsletter</h3>

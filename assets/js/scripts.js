@@ -2,6 +2,47 @@
  * Scripts base
  * Author Javi_Mata <javimata@gmail.com>
  */
+// Registra el service worker si el navegador lo soporta
+if (navigator.serviceWorker) {
+	navigator.serviceWorker.register('./sw.js');
+}
+
+/**
+ * Activa el lazy load de images, si el navegador soporta IntersectionObserver lo utiliza
+ * Si no lo soporta utiliza JS simple
+ */
+if ("IntersectionObserver" in window) {
+
+	const lazyImages = document.querySelectorAll('[data-src]');
+
+	const options = { threshold: 0 };
+
+	const imageObserver = new IntersectionObserver(
+		(entries, observer) => {
+			entries.forEach(entry => {
+				if (entry.isIntersecting) {
+					const image = entry.target;
+					image.src = image.dataset.src;
+					imageObserver.unobserve(image);
+				}
+			});
+		}, options);
+
+	lazyImages.forEach(image => imageObserver.observe(image));
+
+} else {
+
+	function init() {
+		var imgDefer = document.getElementsByTagName('img');
+		for (var i = 0; i < imgDefer.length; i++) {
+			if (imgDefer[i].getAttribute('data-src')) {
+				imgDefer[i].setAttribute('src', imgDefer[i].getAttribute('data-src'));
+			}
+		}
+	}
+	window.onload = init;
+
+}
 
 (function ($) {
 	
@@ -32,8 +73,6 @@
 
 		function showMasonry() {
 			$('.load-grid').delay(1000).fadeOut(0, function(){
-				// $('.grid').css('opacity', 1);
-				// $('.grid').css('display', 'block');
 				$('.grid').fadeIn(1000);
 				$grid.masonry();
 			});
@@ -231,7 +270,7 @@
 					// var offsetpos = (target.offset().top - 290);
 					// alert( target + offsetpos );
 					$('html, body').animate({
-						scrollTop: target.offset().top - alto
+						scrollTop: target.offset().top - ( alto + 10)
 					}, 1000, function() {
 					// Callback after animation
 					// Must change focus!
